@@ -103,7 +103,7 @@ const Services: NextPage = () => {
         <div className="container" style={{ textAlign: 'center' }}>
           <h2>Ready to Book?</h2>
           <p style={{ maxWidth: '600px', margin: '0 auto 2rem' }}>
-            Contact us today for a free, no-obligation quote. We'll be happy to
+            Contact us today for a free, no-obligation quote. We will be happy to
             discuss your requirements and provide a tailored cleaning solution.
           </p>
           <Link href="/contact" className="btn">

@@ -28,7 +28,7 @@ const About: NextPage = () => {
             <p>
               Founded on the principles of excellence and integrity, we understand
               that inviting a cleaning company into your home or business is a
-              matter of trust. That's why we carefully vet all our team members and
+              matter of trust. This is why we carefully vet all our team members and
               ensure they are fully trained and insured.
             </p>
 
@@ -54,7 +54,7 @@ const About: NextPage = () => {
               <div className="service-card">
                 <h3 style={{ fontSize: '1.25rem' }}>UK-Based Service</h3>
                 <p>
-                  We're a local company serving communities across the UK. We
+                  We are a local company serving communities across the UK. We
                   understand the needs of British homes and businesses.
                 </p>
               </div>
@@ -70,8 +70,8 @@ const About: NextPage = () => {
               <div className="service-card">
                 <h3 style={{ fontSize: '1.25rem' }}>Quality Guarantee</h3>
                 <p>
-                  We're not satisfied unless you are. If you're not happy with our
-                  service, we'll make it right.
+                  We are not satisfied unless you are. If you are not happy with our
+                  service, we will make it right.
                 </p>
               </div>
             </div>
@@ -82,13 +82,13 @@ const About: NextPage = () => {
 
             <p>
               At Strathmore Cleaning, we believe that a clean environment
-              contributes to wellbeing and productivity. Whether we're cleaning
+              contributes to wellbeing and productivity. Whether we are cleaning
               your home or your workplace, we approach every job with the same
               level of care and attention to detail.
             </p>
 
             <p>
-              We use professional-grade cleaning products and equipment, and we're
+              We use professional-grade cleaning products and equipment, and we are
               always happy to accommodate any specific requirements or preferences
               you may have.
             </p>

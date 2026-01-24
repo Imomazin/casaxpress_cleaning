@@ -27,7 +27,7 @@ const Contact: NextPage = () => {
           <h2>Contact Us</h2>
 
           <p style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 3rem' }}>
-            We'd love to hear from you. Get in touch for a free, no-obligation
+            We would love to hear from you. Get in touch for a free, no-obligation
             quote or to discuss your cleaning requirements.
           </p>
 

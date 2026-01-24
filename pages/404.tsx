@@ -17,7 +17,7 @@ const Custom404: NextPage = () => {
             Page Not Found
           </h2>
           <p>
-            Sorry, the page you are looking for doesn't exist or has been moved.
+            Sorry, the page you are looking for does not exist or has been moved.
           </p>
           <Link href="/" className="btn">
             Return to Homepage
