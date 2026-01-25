@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'linear-gradient(135deg, rgba(30, 64, 175, 0.85) 0%, rgba(59, 130, 246, 0.75) 100%), url(/images/hero-family.svg) center/cover',
+        background: 'linear-gradient(135deg, rgba(30, 64, 175, 0.85) 0%, rgba(59, 130, 246, 0.75) 100%), url(/images/hero-family-real.jpg) center/cover',
         backgroundAttachment: 'fixed',
         color: 'white',
         textAlign: 'center',
@@ -241,10 +241,10 @@ const Home: NextPage = () => {
               transition={{ duration: 0.6 }}
             >
               <Image
-                src="/images/parent-child-reading.svg"
-                alt="Parent and child reading together at home"
-                width={800}
-                height={600}
+                src="/images/parent-child-home.jpg"
+                alt="Baby relaxing at home with family pets"
+                width={1456}
+                height={816}
                 style={{ width: '100%', height: 'auto', borderRadius: '16px' }}
               />
             </motion.div>
@@ -278,10 +278,10 @@ const Home: NextPage = () => {
               transition={{ duration: 0.6 }}
             >
               <Image
-                src="/images/family-kitchen.svg"
+                src="/images/family-cooking.jpg"
                 alt="Family cooking together in kitchen"
-                width={900}
-                height={700}
+                width={1456}
+                height={816}
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
             </motion.div>
@@ -452,10 +452,10 @@ const Home: NextPage = () => {
 
               {/* Professional Cleaner Image */}
               <Image
-                src="/images/cleaner-professional.svg"
-                alt="Professional cleaner in uniform"
-                width={600}
-                height={800}
+                src="/images/cleaner-living-room.jpg"
+                alt="Professional cleaner working in living room"
+                width={1456}
+                height={816}
                 style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
               />
             </motion.div>
@@ -507,10 +507,10 @@ const Home: NextPage = () => {
               transition={{ duration: 0.5 }}
             >
               <Image
-                src="/images/cleaner-professional.svg"
-                alt="Smiling professional cleaner"
-                width={800}
-                height="600"
+                src="/images/cleaners-bathroom.jpg"
+                alt="Professional cleaners working together"
+                width={1456}
+                height={2184}
                 style={{ width: '100%', height: '220px', objectFit: 'cover', objectPosition: 'center' }}
               />
               <div style={{ padding: '2rem' }}>
@@ -569,10 +569,10 @@ const Home: NextPage = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <Image
-                src="/images/cleaner-kitchen.svg"
-                alt="Professional cleaner cleaning kitchen cabinets"
-                width={800}
-                height={600}
+                src="/images/cleaner-kitchen-real.jpg"
+                alt="Professional cleaner cleaning kitchen"
+                width={1337}
+                height={2000}
                 style={{ width: '100%', height: '220px', objectFit: 'cover', objectPosition: 'center' }}
               />
               <div style={{ padding: '2rem' }}>
@@ -727,10 +727,10 @@ const Home: NextPage = () => {
               transition={{ duration: 0.6 }}
             >
               <Image
-                src="/images/cleaner-bedroom.svg"
-                alt="Professional cleaner making bed in bedroom"
-                width={900}
-                height={700}
+                src="/images/cleaners-bathroom.jpg"
+                alt="Professional cleaning team at work"
+                width={1456}
+                height={2184}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '16px' }}
               />
             </motion.div>
