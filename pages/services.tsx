@@ -7,7 +7,7 @@ const Services: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Services & Pricing - Strathmore Cleaning</title>
+        <title>Services & Pricing - CasaXpress</title>
         <meta
           name="description"
           content="Professional cleaning services in Scotland. Basic cleaning from £44, deep cleaning from £50. Serving Hamilton, Bothwell, Uddingston, Motherwell & East Kilbride."

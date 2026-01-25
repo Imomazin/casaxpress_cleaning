@@ -16,10 +16,10 @@ const Contact: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Contact Us - Strathmore Cleaning</title>
+        <title>Contact Us - CasaXpress</title>
         <meta
           name="description"
-          content="Get in touch with Strathmore Cleaning for a free quote. Call, text, WhatsApp or email. Serving Hamilton, Bothwell, Uddingston, Motherwell & East Kilbride."
+          content="Get in touch with CasaXpress for a free quote. Call, text, WhatsApp or email. Serving Hamilton, Bothwell, Uddingston, Motherwell & East Kilbride."
         />
       </Head>
 

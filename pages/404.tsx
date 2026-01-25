@@ -7,7 +7,7 @@ const Custom404: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Page Not Found - Strathmore Cleaning</title>
+        <title>Page Not Found - CasaXpress</title>
         <meta name="description" content="The page you are looking for could not be found." />
       </Head>
 

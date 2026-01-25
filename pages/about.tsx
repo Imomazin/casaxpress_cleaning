@@ -7,7 +7,7 @@ const About: NextPage = () => {
   return (
     <>
       <Head>
-        <title>About Us - Strathmore Cleaning</title>
+        <title>About Us - CasaXpress</title>
         <meta
           name="description"
           content="Professional cleaning services in Scotland. Bright energy, gentle care, professional results. Serving Hamilton, Bothwell, Uddingston, Motherwell & East Kilbride."
@@ -23,7 +23,7 @@ const About: NextPage = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="section-badge">Our Story</span>
-            <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>About Strathmore Cleaning</h1>
+            <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>About CasaXpress</h1>
             <p className="tagline" style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>
               Bright Energy • Gentle Care • Professional Results
             </p>
@@ -151,7 +151,7 @@ const About: NextPage = () => {
             >
               <span className="section-badge">Why Choose Us</span>
               <h2>Built on Trust & Quality</h2>
-              <p>What makes Strathmore Cleaning different</p>
+              <p>What makes CasaXpress different</p>
             </motion.div>
           </div>
 
@@ -297,7 +297,7 @@ const About: NextPage = () => {
           >
             <h2 style={{ marginBottom: '1.5rem' }}>Our Commitment to You</h2>
             <p style={{ fontSize: '1.1rem', color: '#64748b', lineHeight: '1.9', marginBottom: '1.5rem' }}>
-              At Strathmore Cleaning, we believe that a clean home is more than just tidy
+              At CasaXpress, we believe that a clean home is more than just tidy
               surfaces—it&apos;s about creating a space where you feel comfortable, safe, and at peace.
             </p>
             <p style={{ fontSize: '1.1rem', color: '#64748b', lineHeight: '1.9', marginBottom: '1.5rem' }}>
@@ -322,7 +322,7 @@ const About: NextPage = () => {
                 color: '#1e40af',
                 marginBottom: '0.5rem'
               }}>
-                Thank you for considering Strathmore Cleaning.
+                Thank you for considering CasaXpress.
               </p>
               <p style={{ fontSize: '1.1rem', color: '#64748b' }}>
                 We look forward to serving you and your family.
@@ -342,7 +342,7 @@ const About: NextPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2>Ready to Experience the Strathmore Difference?</h2>
+            <h2>Ready to Experience the CasaXpress Difference?</h2>
             <p>Get in touch today for a free, no-obligation quote</p>
             <Link href="/contact" className="btn" style={{ background: 'white', color: '#1e40af' }}>
               Contact Us Today

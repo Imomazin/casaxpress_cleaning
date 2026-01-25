@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Strathmore Cleaning - Exceptional Home Cleaning Services in Scotland</title>
+        <title>CasaXpress - Exceptional Home Cleaning Services in Scotland</title>
         <meta
           name="description"
           content="Exceptional home cleaning services in Hamilton, Bothwell, Uddingston, Motherwell & East Kilbride. Bright energy • Gentle care • Professional results."
@@ -208,22 +208,22 @@ const Home: NextPage = () => {
                 color: '#1e293b',
                 lineHeight: 1.3
               }}>
-                <span style={{ fontStyle: 'italic', fontWeight: 400, fontFamily: 'Georgia, serif' }}>Life,</span> made possible with Strathmore Cleaning
+                <span style={{ fontStyle: 'italic', fontWeight: 400, fontFamily: 'Georgia, serif' }}>Life,</span> made possible with CasaXpress
               </h2>
               <p style={{ fontSize: '1.05rem', color: '#64748b', lineHeight: '1.9', marginBottom: '1.25rem' }}>
                 Life&apos;s too short to spend time cleaning the house! Between work, family, and trying to squeeze in a
-                little fun, your to-do list is long, but your free time is in short supply. With Strathmore Cleaning you won&apos;t
+                little fun, your to-do list is long, but your free time is in short supply. With CasaXpress you won&apos;t
                 spend those rare unscheduled moments scrubbing showers.
               </p>
               <p style={{ fontSize: '1.05rem', color: '#64748b', lineHeight: '1.9', marginBottom: '1.25rem' }}>
-                Strathmore Cleaning provides more than a sparkling clean home – for years we&apos;ve been helping busy
+                CasaXpress provides more than a sparkling clean home – for years we&apos;ve been helping busy
                 people like you take back your time, so you can focus on the things that truly matter – whether that&apos;s
                 spending time with your little ones, focusing on your career or enjoying a hobby. We understand that
                 overwhelmed feeling, and we strive to make your life easier with free quotes, flexible scheduling,
                 convenient communication options and cleaning services tailored to your unique needs.
               </p>
               <p style={{ fontSize: '1.05rem', color: '#64748b', lineHeight: '1.9' }}>
-                Stop spending your nights and weekends scrubbing sinks and mopping floors. Let Strathmore Cleaning take
+                Stop spending your nights and weekends scrubbing sinks and mopping floors. Let CasaXpress take
                 the burden off your shoulders—so you can finally enjoy your home, your time, and your life. Don&apos;t wait
                 another week to feel peace in your own space.
               </p>
@@ -339,7 +339,7 @@ const Home: NextPage = () => {
               &quot;Sarah and her team were an absolute delight to work with! They put their heart and soul into making sure
               that everything in my house was sparkling clean for my upcoming family guests. I felt that they really
               went above and beyond in doing a great job! Communication with the office was easy and efficient. I
-              highly recommend Strathmore Cleaning to anyone who wants a good cleaning job done well!&quot;
+              highly recommend CasaXpress to anyone who wants a good cleaning job done well!&quot;
             </p>
             <p style={{
               fontSize: '1.1rem',
@@ -466,7 +466,7 @@ const Home: NextPage = () => {
       {/* Services Section */}
       {/* IMAGES NEEDED:
           1. Female cleaner smiling (Scottish/White), working in home
-          2. Cleaning products bottles (Strathmore branded if possible)
+          2. Cleaning products bottles (CasaXpress branded if possible)
           3. Female cleaner (Pakistani/Indian descent) cleaning kitchen cabinets
       */}
       <section className="content-section" style={{ background: '#f8fafc' }}>
@@ -551,7 +551,7 @@ const Home: NextPage = () => {
                 <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: '1.8' }}>
                   We&apos;ll reach those often-neglected areas like baseboards, inside appliances and ceiling fans. Our detailed cleaning
                   services are perfect for move-ins/move-outs, seasonal tasks such as spring cleaning, and prior to special occasions
-                  such as an open house, holiday party or birthday gathering. Contact Strathmore Cleaning today and leave the details to us!
+                  such as an open house, holiday party or birthday gathering. Contact CasaXpress today and leave the details to us!
                 </p>
               </div>
             </motion.div>
@@ -636,7 +636,7 @@ const Home: NextPage = () => {
                     answer: 'Yes, we use professional-grade, eco-friendly cleaning products that are safe for pets and children. We can also accommodate specific product preferences upon request.'
                   },
                   {
-                    question: 'What is the difference between Strathmore Cleaning and other cleaning companies?',
+                    question: 'What is the difference between CasaXpress and other cleaning companies?',
                     answer: 'We&apos;re a local Scottish company with a gentle, respectful approach perfect for elderly clients and busy families. Our team is vetted, reliable, and committed to building long-term trust with every customer.'
                   }
                 ].map((faq, index) => (
@@ -824,7 +824,7 @@ const Home: NextPage = () => {
               color: '#1e293b',
               lineHeight: 1.3
             }}>
-              Your spotless home starts with a free quote from Strathmore Cleaning!
+              Your spotless home starts with a free quote from CasaXpress!
             </h2>
 
             <div style={{ maxWidth: '600px', margin: '0 auto' }}>

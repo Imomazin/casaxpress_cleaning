@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container footer-container">
         <div className="footer-grid">
           <div className="footer-section">
-            <h3>Strathmore Cleaning</h3>
+            <h3>CasaXpress</h3>
             <p>
               Professional, trustworthy cleaning services for homes and businesses across Scotland.
               We bring bright energy, gentle care, and professional results to every job.
@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Strathmore Cleaning. All rights reserved.</p>
+          <p>&copy; {currentYear} CasaXpress. All rights reserved.</p>
           <p>
             Powered by <span className="powered-by">Ambidexters Inc.</span>
           </p>

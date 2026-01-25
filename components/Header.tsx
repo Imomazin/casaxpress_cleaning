@@ -12,7 +12,7 @@ export default function Header() {
     <header className="header">
       <div className="container header-container">
         <Link href="/" className="logo">
-          <span className="logo-text">Strathmore Cleaning</span>
+          <span className="logo-text">CasaXpress</span>
         </Link>
 
         <nav className="nav">
