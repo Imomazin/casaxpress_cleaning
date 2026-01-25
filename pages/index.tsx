@@ -538,10 +538,10 @@ const Home: NextPage = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               <Image
-                src="/images/cleaning-service.svg"
-                alt="Professional cleaning products"
-                width={800}
-                height={600}
+                src="/images/family-christmas-gifts.jpg"
+                alt="Happy family celebrating special occasion in clean home"
+                width={1456}
+                height={816}
                 style={{ width: '100%', height: '220px', objectFit: 'cover', objectPosition: 'center' }}
               />
               <div style={{ padding: '2rem' }}>
@@ -727,10 +727,10 @@ const Home: NextPage = () => {
               transition={{ duration: 0.6 }}
             >
               <Image
-                src="/images/cleaners-bathroom.jpg"
-                alt="Professional cleaning team at work"
+                src="/images/cleaners-team-office.jpg"
+                alt="Professional cleaning team working together"
                 width={1456}
-                height={2184}
+                height={816}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '16px' }}
               />
             </motion.div>

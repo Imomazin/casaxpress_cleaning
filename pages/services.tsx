@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 const Services: NextPage = () => {
@@ -143,6 +144,86 @@ const Services: NextPage = () => {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Specialty Cleaning Showcase */}
+      <section className="content-section" style={{ paddingTop: '2rem', paddingBottom: '2rem', background: '#f8fafc' }}>
+        <div className="container">
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
+            gap: '3rem',
+            maxWidth: '1200px',
+            margin: '0 auto',
+            alignItems: 'center'
+          }}>
+            <motion.div
+              style={{
+                borderRadius: '16px',
+                overflow: 'hidden',
+                boxShadow: '0 12px 40px rgba(0,0,0,0.15)'
+              }}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <Image
+                src="/images/cleaner-gym-fitness.jpg"
+                alt="Professional gym and fitness center cleaning"
+                width={1456}
+                height={816}
+                style={{ width: '100%', height: 'auto', borderRadius: '16px' }}
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: '#1e293b' }}>
+                Specialty & Commercial Cleaning
+              </h2>
+              <p style={{ fontSize: '1.1rem', color: '#64748b', lineHeight: '1.8', marginBottom: '1rem' }}>
+                Beyond residential cleaning, we offer specialized services for gyms, fitness centers,
+                small offices, and commercial spaces throughout Scotland.
+              </p>
+              <p style={{ fontSize: '1.1rem', color: '#64748b', lineHeight: '1.8' }}>
+                Our professional team is equipped to handle unique cleaning requirements with the
+                same attention to detail and care we bring to every home.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Commercial Services Image */}
+      <section className="content-section" style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
+        <div className="container">
+          <motion.div
+            style={{
+              maxWidth: '900px',
+              margin: '0 auto',
+              borderRadius: '16px',
+              overflow: 'hidden',
+              boxShadow: '0 12px 40px rgba(0,0,0,0.15)'
+            }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <Image
+              src="/images/cleaner-commercial-cleaning.jpg"
+              alt="Professional commercial cleaning services"
+              width={1456}
+              height={816}
+              style={{ width: '100%', height: 'auto', borderRadius: '16px' }}
+            />
+          </motion.div>
         </div>
       </section>
 

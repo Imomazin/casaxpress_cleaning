@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 const About: NextPage = () => {
@@ -136,6 +137,33 @@ const About: NextPage = () => {
               </p>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Featured Image - Family enjoying clean home */}
+      <section className="content-section" style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
+        <div className="container">
+          <motion.div
+            style={{
+              maxWidth: '900px',
+              margin: '0 auto',
+              borderRadius: '16px',
+              overflow: 'hidden',
+              boxShadow: '0 12px 40px rgba(0,0,0,0.15)'
+            }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <Image
+              src="/images/family-living-room-relaxed.jpg"
+              alt="Happy family relaxing in clean living room"
+              width={1456}
+              height={816}
+              style={{ width: '100%', height: 'auto', borderRadius: '16px' }}
+            />
+          </motion.div>
         </div>
       </section>
 
@@ -282,6 +310,33 @@ const About: NextPage = () => {
               </p>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Featured Image - Professional Cleaning Service */}
+      <section className="content-section" style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
+        <div className="container">
+          <motion.div
+            style={{
+              maxWidth: '900px',
+              margin: '0 auto',
+              borderRadius: '16px',
+              overflow: 'hidden',
+              boxShadow: '0 12px 40px rgba(0,0,0,0.15)'
+            }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <Image
+              src="/images/cleaner-office-male.jpg"
+              alt="Professional cleaning service in modern office"
+              width={1456}
+              height={816}
+              style={{ width: '100%', height: 'auto', borderRadius: '16px' }}
+            />
+          </motion.div>
         </div>
       </section>
 
