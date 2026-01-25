@@ -122,7 +122,14 @@ const About: NextPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <div style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>👵👴</div>
+              <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
+                <Image
+                  src="/images/elderly-icon.svg"
+                  alt="Elderly clients"
+                  width={80}
+                  height={80}
+                />
+              </div>
               <h3 style={{ color: '#1e40af', fontSize: '1.5rem', marginBottom: '1rem' }}>
                 Ideal for Elderly Clients
               </h3>
@@ -147,7 +154,14 @@ const About: NextPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <div style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>💼</div>
+              <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
+                <Image
+                  src="/images/professional-icon.svg"
+                  alt="Busy professionals"
+                  width={80}
+                  height={80}
+                />
+              </div>
               <h3 style={{ color: '#1e40af', fontSize: '1.5rem', marginBottom: '1rem' }}>
                 Perfect for Busy Professionals
               </h3>

@@ -11,7 +11,7 @@ const Services: NextPage = () => {
         <title>Services & Pricing - CasaXpress</title>
         <meta
           name="description"
-          content="Professional cleaning services in Scotland. Basic cleaning from £44, deep cleaning from £50. Serving Hamilton, Bothwell, Uddingston, Motherwell & East Kilbride."
+          content="Professional cleaning services in Scotland. Basic cleaning from £19.99/hour, deep cleaning from £24.99/hour. Serving Hamilton, Bothwell, Uddingston, Motherwell & East Kilbride."
         />
       </Head>
 
@@ -70,18 +70,26 @@ const Services: NextPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <span style={{ fontSize: '2.5rem', marginBottom: '1rem', display: 'block' }}>🏠</span>
+              <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
+                <Image
+                  src="/images/house-icon.svg"
+                  alt="Basic cleaning"
+                  width={70}
+                  height={70}
+                />
+              </div>
               <h3>Basic Cleaning</h3>
               <p style={{ color: '#64748b', marginBottom: '1.5rem' }}>Perfect for maintenance</p>
 
-              <div style={{ marginBottom: '1.5rem' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-                  <span style={{ color: '#64748b' }}>2 hours</span>
-                  <span style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1e40af' }}>£44</span>
+              <div style={{ marginBottom: '1.5rem', textAlign: 'center' }}>
+                <div style={{ fontSize: '2.5rem', fontWeight: 700, color: '#1e40af', marginBottom: '0.5rem' }}>
+                  from £19.99
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <span style={{ color: '#64748b' }}>3 hours</span>
-                  <span style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1e40af' }}>£66</span>
+                <div style={{ fontSize: '1.1rem', color: '#64748b' }}>
+                  per hour
+                </div>
+                <div style={{ fontSize: '0.9rem', color: '#94a3b8', marginTop: '0.5rem' }}>
+                  Minimum 2 hours
                 </div>
               </div>
 
@@ -104,18 +112,26 @@ const Services: NextPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <span style={{ fontSize: '2.5rem', marginBottom: '1rem', display: 'block' }}>✨</span>
+              <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
+                <Image
+                  src="/images/sparkle-icon.svg"
+                  alt="Deep cleaning"
+                  width={70}
+                  height={70}
+                />
+              </div>
               <h3>Deep Cleaning</h3>
               <p style={{ color: '#64748b', marginBottom: '1.5rem' }}>One-off or seasonal</p>
 
-              <div style={{ marginBottom: '1.5rem' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-                  <span style={{ color: '#64748b' }}>2 hours</span>
-                  <span style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1e40af' }}>£50–£60</span>
+              <div style={{ marginBottom: '1.5rem', textAlign: 'center' }}>
+                <div style={{ fontSize: '2.5rem', fontWeight: 700, color: '#1e40af', marginBottom: '0.5rem' }}>
+                  from £24.99
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <span style={{ color: '#64748b' }}>3 hours</span>
-                  <span style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1e40af' }}>£75–£90</span>
+                <div style={{ fontSize: '1.1rem', color: '#64748b' }}>
+                  per hour
+                </div>
+                <div style={{ fontSize: '0.9rem', color: '#94a3b8', marginTop: '0.5rem' }}>
+                  Minimum 2 hours
                 </div>
               </div>
 
@@ -137,29 +153,45 @@ const Services: NextPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <span style={{ fontSize: '2.5rem', marginBottom: '1rem', display: 'block' }}>📅</span>
+              <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
+                <Image
+                  src="/images/calendar-icon.svg"
+                  alt="Monthly packages"
+                  width={70}
+                  height={70}
+                />
+              </div>
               <h3>Monthly Packages</h3>
               <p style={{ color: '#64748b', marginBottom: '1.5rem' }}>Save with regular cleans</p>
 
-              <div style={{ marginBottom: '1.5rem' }}>
-                <p style={{ fontWeight: 600, marginBottom: '0.75rem', color: '#1e293b' }}>Weekly Cleaning:</p>
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-                  <span style={{ color: '#64748b', fontSize: '0.9rem' }}>2 hours/week</span>
-                  <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#1e40af' }}>£176/mo</span>
+              <div style={{ marginBottom: '1.5rem', textAlign: 'center' }}>
+                <div style={{ fontSize: '2.5rem', fontWeight: 700, color: '#1e40af', marginBottom: '0.5rem' }}>
+                  from £19.99
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
-                  <span style={{ color: '#64748b', fontSize: '0.9rem' }}>3 hours/week</span>
-                  <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#1e40af' }}>£264/mo</span>
+                <div style={{ fontSize: '1.1rem', color: '#64748b', marginBottom: '1.5rem' }}>
+                  per hour
                 </div>
 
-                <p style={{ fontWeight: 600, marginBottom: '0.75rem', color: '#1e293b' }}>Bi-Weekly:</p>
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-                  <span style={{ color: '#64748b', fontSize: '0.9rem' }}>2 hours</span>
-                  <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#1e40af' }}>£88/mo</span>
-                </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <span style={{ color: '#64748b', fontSize: '0.9rem' }}>3 hours</span>
-                  <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#1e40af' }}>£132/mo</span>
+                <div style={{ textAlign: 'left' }}>
+                  <p style={{ fontWeight: 600, marginBottom: '0.75rem', color: '#1e293b' }}>Weekly Cleaning:</p>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+                    <span style={{ color: '#64748b', fontSize: '0.9rem' }}>2 hours/week</span>
+                    <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#1e40af' }}>from £159.99/mo</span>
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
+                    <span style={{ color: '#64748b', fontSize: '0.9rem' }}>3 hours/week</span>
+                    <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#1e40af' }}>from £239.99/mo</span>
+                  </div>
+
+                  <p style={{ fontWeight: 600, marginBottom: '0.75rem', color: '#1e293b' }}>Bi-Weekly:</p>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+                    <span style={{ color: '#64748b', fontSize: '0.9rem' }}>2 hours</span>
+                    <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#1e40af' }}>from £79.99/mo</span>
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <span style={{ color: '#64748b', fontSize: '0.9rem' }}>3 hours</span>
+                    <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#1e40af' }}>from £119.99/mo</span>
+                  </div>
                 </div>
               </div>
             </motion.div>
