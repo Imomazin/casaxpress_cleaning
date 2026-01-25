@@ -86,7 +86,7 @@ const Contact: NextPage = () => {
                 Quick questions? Give us a call or send a text
               </p>
               <a
-                href="tel:+441234567890"
+                href="tel:+447398761877"
                 style={{
                   display: 'inline-block',
                   fontSize: '1.25rem',
@@ -95,7 +95,7 @@ const Contact: NextPage = () => {
                   textDecoration: 'none'
                 }}
               >
-                01234 567890
+                07398 761877
               </a>
             </motion.div>
 
@@ -121,7 +121,7 @@ const Contact: NextPage = () => {
                 Prefer messaging? WhatsApp us anytime
               </p>
               <a
-                href="https://wa.me/441234567890"
+                href="https://wa.me/447398761877"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -158,7 +158,7 @@ const Contact: NextPage = () => {
                 Detailed enquiry? Drop us an email
               </p>
               <a
-                href="mailto:info@strathmorecleaning.co.uk"
+                href="mailto:info@casaxpress.co.uk"
                 style={{
                   display: 'inline-block',
                   fontSize: '1rem',
@@ -168,7 +168,7 @@ const Contact: NextPage = () => {
                   wordBreak: 'break-word'
                 }}
               >
-                info@strathmorecleaning.co.uk
+                info@casaxpress.co.uk
               </a>
             </motion.div>
           </div>
@@ -205,6 +205,7 @@ const Contact: NextPage = () => {
                   <span>📍</span> Service Areas
                 </h4>
                 <p style={{ color: '#64748b', lineHeight: '1.7' }}>
+                  Serving the Greater Metro Area<br />
                   Hamilton • Bothwell • Uddingston<br />
                   Motherwell • East Kilbride
                 </p>
@@ -212,10 +213,11 @@ const Contact: NextPage = () => {
 
               <div style={{ marginBottom: '2rem' }}>
                 <h4 style={{ fontSize: '1.125rem', marginBottom: '0.75rem', fontWeight: 600, color: '#1e293b', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <span>⏰</span> Response Time
+                  <span>⏰</span> Business Hours
                 </h4>
                 <p style={{ color: '#64748b', lineHeight: '1.7' }}>
-                  We typically respond within 24 hours, often sooner. We know your time is valuable.
+                  Mon-Sat: 7am – 7pm<br />
+                  We typically respond within 24 hours
                 </p>
               </div>
 
@@ -284,7 +286,7 @@ const Contact: NextPage = () => {
                     type="tel"
                     id="phone"
                     name="phone"
-                    placeholder="01234 567890"
+                    placeholder="07398 761877"
                   />
                 </div>
 
