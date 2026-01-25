@@ -1,0 +1,60 @@
+<svg width="900" height="700" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Bedroom -->
+  <rect width="900" height="700" fill="#fef3c7"/>
+
+  <!-- Floor -->
+  <rect y="550" width="900" height="150" fill="#e0e7ff"/>
+
+  <!-- Wall -->
+  <rect width="900" height="550" fill="#f0f9ff"/>
+
+  <!-- Window with light -->
+  <rect x="650" y="100" width="180" height="250" fill="#dbeafe" stroke="#3b82f6" stroke-width="5" rx="8"/>
+  <line x1="740" y1="100" x2="740" y2="350" stroke="#3b82f6" stroke-width="3"/>
+  <line x1="650" y1="225" x2="830" y2="225" stroke="#3b82f6" stroke-width="3"/>
+
+  <!-- Sunlight rays -->
+  <polygon points="720,180 650,350 790,350" fill="#fbbf24" opacity="0.1"/>
+
+  <!-- Bed frame -->
+  <rect x="200" y="400" width="450" height="150" fill="#1e40af" rx="10"/>
+
+  <!-- Mattress -->
+  <rect x="200" y="350" width="450" height="60" fill="#cbd5e1" rx="8"/>
+
+  <!-- Pillows -->
+  <ellipse cx="300" cy="340" rx="70" ry="30" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <ellipse cx="550" cy="340" rx="70" ry="30" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- Sheet being made (half tucked) -->
+  <path d="M 200 410 L 200 350 L 650 350 L 650 410 L 500 420 L 200 410" fill="#f0f9ff" stroke="#3b82f6" stroke-width="2"/>
+
+  <!-- Cleaner figure -->
+  <circle cx="500" cy="450" r="45" fill="#fbbf24"/>
+  <rect x="455" y="495" width="90" height="130" fill="#1e40af" rx="10"/>
+
+  <!-- Arms making bed -->
+  <rect x="395" y="510" width="60" height="12" fill="#3b82f6" rx="6"/>
+  <rect x="545" y="510" width="60" height="12" fill="#3b82f6" rx="6"/>
+
+  <!-- Cleaning cart beside bed -->
+  <rect x="50" y="450" width="100" height="120" fill="#cbd5e1" stroke="#64748b" stroke-width="3" rx="6"/>
+
+  <!-- Supplies on cart -->
+  <rect x="65" y="460" width="30" height="50" fill="#3b82f6" rx="4"/>
+  <rect x="105" y="460" width="30" height="50" fill="#60a5fa" rx="4"/>
+  <circle cx="90" cy="540" r="15" fill="#fbbf24"/>
+
+  <!-- Cart wheels -->
+  <circle cx="70" cy="575" r="10" fill="#374151"/>
+  <circle cx="130" cy="575" r="10" fill="#374151"/>
+
+  <!-- Sparkles indicating clean room -->
+  <circle cx="350" cy="250" r="6" fill="#fbbf24"/>
+  <circle cx="520" cy="280" r="7" fill="#fbbf24"/>
+  <circle cx="600" cy="240" r="5" fill="#fbbf24"/>
+  <circle cx="450" cy="200" r="6" fill="#fbbf24"/>
+
+  <!-- Label -->
+  <text x="450" y="680" font-family="Arial, sans-serif" font-size="28" fill="#1e40af" text-anchor="middle" font-weight="bold">Professional Housekeeping</text>
+</svg>

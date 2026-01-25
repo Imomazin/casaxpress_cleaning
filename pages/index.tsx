@@ -240,20 +240,13 @@ const Home: NextPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              {/* Placeholder for image */}
-              <div style={{
-                background: 'linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)',
-                minHeight: '400px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#1e40af',
-                fontSize: '1rem',
-                textAlign: 'center',
-                padding: '2rem'
-              }}>
-                [Image: Parent and child reading together at home]
-              </div>
+              <Image
+                src="/images/parent-child-reading.svg"
+                alt="Parent and child reading together at home"
+                width={800}
+                height={600}
+                style={{ width: '100%', height: 'auto', borderRadius: '16px' }}
+              />
             </motion.div>
           </div>
         </div>
@@ -284,21 +277,13 @@ const Home: NextPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              {/* Placeholder for image */}
-              <div style={{
-                background: 'linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)',
-                minHeight: '500px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#1e40af',
-                fontSize: '1rem',
-                textAlign: 'center',
-                padding: '2rem',
-                height: '100%'
-              }}>
-                [Image: Family in kitchen together, diverse Scottish family]
-              </div>
+              <Image
+                src="/images/family-kitchen.svg"
+                alt="Family cooking together in kitchen"
+                width={900}
+                height={700}
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
             </motion.div>
 
             <motion.div
@@ -583,20 +568,13 @@ const Home: NextPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              {/* Image placeholder */}
-              <div style={{
-                background: 'linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)',
-                minHeight: '220px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#1e40af',
-                fontSize: '0.9rem',
-                textAlign: 'center',
-                padding: '1rem'
-              }}>
-                [Image: Female cleaner (Pakistani/Indian) cleaning kitchen]
-              </div>
+              <Image
+                src="/images/cleaner-kitchen.svg"
+                alt="Professional cleaner cleaning kitchen cabinets"
+                width={800}
+                height={600}
+                style={{ width: '100%', height: '220px', objectFit: 'cover', objectPosition: 'center' }}
+              />
               <div style={{ padding: '2rem' }}>
                 <h3 style={{ color: '#1e293b', fontSize: '1.5rem', marginBottom: '1rem', fontWeight: 600 }}>
                   Specialty cleaning
@@ -748,20 +726,13 @@ const Home: NextPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              {/* Placeholder for image */}
-              <div style={{
-                background: 'linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)',
-                minHeight: '600px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#1e40af',
-                fontSize: '1rem',
-                textAlign: 'center',
-                padding: '2rem'
-              }}>
-                [Image: Female cleaner making bed in bright bedroom, diverse team member]
-              </div>
+              <Image
+                src="/images/cleaner-bedroom.svg"
+                alt="Professional cleaner making bed in bedroom"
+                width={900}
+                height={700}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '16px' }}
+              />
             </motion.div>
           </div>
         </div>
