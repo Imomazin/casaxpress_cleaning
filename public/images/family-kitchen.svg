@@ -1,0 +1,56 @@
+<svg width="900" height="700" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="700" fill="#fef3c7"/>
+
+  <!-- Floor -->
+  <rect y="550" width="900" height="150" fill="#fbbf24" opacity="0.3"/>
+
+  <!-- Kitchen counter -->
+  <rect x="100" y="400" width="700" height="150" fill="#94a3b8" rx="8"/>
+  <rect x="100" y="380" width="700" height="30" fill="#cbd5e1" rx="5"/>
+
+  <!-- Cabinets above -->
+  <rect x="150" y="200" width="250" height="150" fill="#1e40af" stroke="#1e3a8a" stroke-width="4" rx="6"/>
+  <rect x="450" y="200" width="250" height="150" fill="#1e40af" stroke="#1e3a8a" stroke-width="4" rx="6"/>
+  <circle cx="220" cy="275" r="8" fill="#cbd5e1"/>
+  <circle cx="330" cy="275" r="8" fill="#cbd5e1"/>
+  <circle cx="520" cy="275" r="8" fill="#cbd5e1"/>
+  <circle cx="630" cy="275" r="8" fill="#cbd5e1"/>
+
+  <!-- Large mixing bowl on counter -->
+  <ellipse cx="300" cy="450" rx="70" ry="30" fill="#ffffff" stroke="#1e40af" stroke-width="3"/>
+  <ellipse cx="300" cy="445" rx="65" ry="25" fill="#fbbf24" opacity="0.4"/>
+
+  <!-- Parent figure 1 (left) -->
+  <circle cx="250" cy="480" r="50" fill="#fb923c"/>
+  <rect x="200" y="530" width="100" height="140" fill="#3b82f6" rx="10"/>
+  <!-- Arm reaching toward bowl -->
+  <rect x="280" y="550" width="60" height="15" fill="#60a5fa" rx="7" transform="rotate(-20 310 557)"/>
+
+  <!-- Child figure (center) -->
+  <circle cx="450" cy="500" r="38" fill="#fcd34d"/>
+  <rect x="412" y="538" width="76" height="110" fill="#a3e635" rx="8"/>
+  <!-- Holding spoon -->
+  <rect x="440" y="565" width="50" height="10" fill="#64748b" rx="5"/>
+
+  <!-- Parent figure 2 (right) -->
+  <circle cx="620" cy="480" r="50" fill="#f87171"/>
+  <rect x="570" y="530" width="100" height="140" fill="#ec4899" rx="10"/>
+
+  <!-- Ingredients on counter -->
+  <!-- Flour bag -->
+  <rect x="500" y="420" width="60" height="80" fill="#ffffff" stroke="#94a3b8" stroke-width="2" rx="4"/>
+  <text x="530" y="460" font-family="Arial" font-size="16" fill="#64748b" text-anchor="middle" font-weight="bold">FLOUR</text>
+
+  <!-- Eggs -->
+  <ellipse cx="650" cy="455" rx="20" ry="25" fill="#fef3c7" stroke="#cbd5e1" stroke-width="2"/>
+  <ellipse cx="680" cy="455" rx="20" ry="25" fill="#fef3c7" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- Steam/happiness indicators -->
+  <circle cx="350" cy="400" r="5" fill="#94a3b8" opacity="0.5"/>
+  <circle cx="370" cy="385" r="6" fill="#94a3b8" opacity="0.4"/>
+  <circle cx="390" cy="375" r="7" fill="#94a3b8" opacity="0.3"/>
+
+  <!-- Label -->
+  <text x="450" y="680" font-family="Arial, sans-serif" font-size="28" fill="#1e40af" text-anchor="middle" font-weight="bold">Family Cooking Together</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg width="600" height="800" viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="800" fill="#f8fafc"/>
+
+  <!-- Floor -->
+  <rect y="650" width="600" height="150" fill="#cbd5e1"/>
+
+  <!-- Wall -->
+  <rect width="600" height="650" fill="#e0f2fe"/>
+
+  <!-- Door frame -->
+  <rect x="400" y="200" width="150" height="450" fill="#ffffff" stroke="#64748b" stroke-width="4" rx="5"/>
+
+  <!-- Cleaner figure -->
+  <circle cx="250" cy="350" r="60" fill="#fbbf24"/>
+  <rect x="190" y="410" width="120" height="240" fill="#1e40af" rx="10"/>
+
+  <!-- Arms -->
+  <rect x="130" y="450" width="60" height="15" fill="#1e3a8a" rx="7"/>
+  <rect x="310" y="450" width="60" height="15" fill="#1e3a8a" rx="7"/>
+
+  <!-- Cleaning bucket -->
+  <rect x="320" y="600" width="80" height="60" fill="#3b82f6" rx="5"/>
+  <rect x="315" y="595" width="90" height="10" fill="#60a5fa" rx="5"/>
+
+  <!-- Mop -->
+  <line x1="140" y1="470" x2="100" y2="650" stroke="#94a3b8" stroke-width="8"/>
+  <rect x="85" y="645" width="30" height="60" fill="#64748b" rx="3"/>
+
+  <!-- Sparkles -->
+  <circle cx="450" cy="300" r="5" fill="#fbbf24"/>
+  <circle cx="480" cy="350" r="7" fill="#fbbf24"/>
+  <circle cx="470" cy="400" r="6" fill="#fbbf24"/>
+
+  <text x="300" y="750" font-family="Arial, sans-serif" font-size="24" fill="#1e40af" text-anchor="middle" font-weight="600">Professional Cleaner</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Living room -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+
+  <!-- Floor -->
+  <rect y="450" width="800" height="150" fill="#e0e7ff"/>
+
+  <!-- Wall -->
+  <rect width="800" height="450" fill="#eff6ff"/>
+
+  <!-- Window -->
+  <rect x="50" y="80" width="200" height="280" fill="#dbeafe" stroke="#3b82f6" stroke-width="6" rx="8"/>
+  <line x1="150" y1="80" x2="150" y2="360" stroke="#3b82f6" stroke-width="4"/>
+  <line x1="50" y1="220" x2="250" y2="220" stroke="#3b82f6" stroke-width="4"/>
+
+  <!-- Sofa -->
+  <rect x="400" y="350" width="350" height="200" fill="#1e40af" rx="15"/>
+  <rect x="385" y="365" width="80" height="160" fill="#1e3a8a" rx="10"/>
+  <rect x="685" y="365" width="80" height="160" fill="#1e3a8a" rx="10"/>
+
+  <!-- Parent figure (left) -->
+  <circle cx="500" cy="380" r="45" fill="#fbbf24"/>
+  <rect x="455" y="425" width="90" height="125" fill="#3b82f6" rx="10"/>
+
+  <!-- Child figure (right, smaller) -->
+  <circle cx="630" cy="400" r="35" fill="#fcd34d"/>
+  <rect x="595" y="435" width="70" height="90" fill="#60a5fa" rx="8"/>
+
+  <!-- Book between them -->
+  <rect x="540" y="440" width="80" height="60" fill="#ffffff" stroke="#1e40af" stroke-width="3" rx="4"/>
+  <line x1="580" y1="440" x2="580" y2="500" stroke="#1e40af" stroke-width="2"/>
+
+  <!-- Decorative lamp -->
+  <rect x="680" y="280" width="15" height="100" fill="#64748b"/>
+  <ellipse cx="687.5" cy="270" rx="35" ry="25" fill="#fbbf24" opacity="0.7"/>
+
+  <!-- Cushions on sofa -->
+  <circle cx="450" cy="450" r="30" fill="#60a5fa"/>
+  <circle cx="700" cy="450" r="30" fill="#60a5fa"/>
+
+  <!-- Label -->
+  <text x="400" y="580" font-family="Arial, sans-serif" font-size="24" fill="#1e40af" font-weight="600">Parent & Child Reading Together</text>
+</svg>
