@@ -1,8 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import { FaCalendarCheck, FaCheckCircle, FaStar, FaHandsHelping } from 'react-icons/fa'
 
 const Home: NextPage = () => {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null)
@@ -29,7 +31,7 @@ const Home: NextPage = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'linear-gradient(135deg, rgba(30, 64, 175, 0.85) 0%, rgba(59, 130, 246, 0.75) 100%), url(/hero-family.jpg) center/cover',
+        background: 'linear-gradient(135deg, rgba(30, 64, 175, 0.85) 0%, rgba(59, 130, 246, 0.75) 100%), url(/images/hero-family.svg) center/cover',
         backgroundAttachment: 'fixed',
         color: 'white',
         textAlign: 'center',
@@ -99,7 +101,9 @@ const Home: NextPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <div style={{ fontSize: '3rem', marginBottom: '1rem', color: '#3b82f6' }}>📅</div>
+              <div style={{ fontSize: '3rem', marginBottom: '1rem', color: '#3b82f6', display: 'flex', justifyContent: 'center' }}>
+                <FaCalendarCheck />
+              </div>
               <h3 style={{ color: '#1e293b', fontSize: '1.25rem', marginBottom: '0.75rem', fontWeight: 600 }}>
                 Time-tested
               </h3>
@@ -120,7 +124,9 @@ const Home: NextPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <div style={{ fontSize: '3rem', marginBottom: '1rem', color: '#3b82f6' }}>✓</div>
+              <div style={{ fontSize: '3rem', marginBottom: '1rem', color: '#3b82f6', display: 'flex', justifyContent: 'center' }}>
+                <FaCheckCircle />
+              </div>
               <h3 style={{ color: '#1e293b', fontSize: '1.25rem', marginBottom: '0.75rem', fontWeight: 600 }}>
                 We&apos;ve got this
               </h3>
@@ -141,7 +147,9 @@ const Home: NextPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <div style={{ fontSize: '3rem', marginBottom: '1rem', color: '#3b82f6' }}>✨</div>
+              <div style={{ fontSize: '3rem', marginBottom: '1rem', color: '#3b82f6', display: 'flex', justifyContent: 'center' }}>
+                <FaStar />
+              </div>
               <h3 style={{ color: '#1e293b', fontSize: '1.25rem', marginBottom: '0.75rem', fontWeight: 600 }}>
                 Personalised clean
               </h3>
@@ -162,7 +170,9 @@ const Home: NextPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <div style={{ fontSize: '3rem', marginBottom: '1rem', color: '#3b82f6' }}>🤝</div>
+              <div style={{ fontSize: '3rem', marginBottom: '1rem', color: '#3b82f6', display: 'flex', justifyContent: 'center' }}>
+                <FaHandsHelping />
+              </div>
               <h3 style={{ color: '#1e293b', fontSize: '1.25rem', marginBottom: '0.75rem', fontWeight: 600 }}>
                 Trusted team members
               </h3>
@@ -455,20 +465,14 @@ const Home: NextPage = () => {
                 <div style={{ fontSize: '1.25rem', marginTop: '0.25rem' }}>★★★★★</div>
               </div>
 
-              {/* Placeholder for image */}
-              <div style={{
-                background: 'linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)',
-                minHeight: '500px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#1e40af',
-                fontSize: '1rem',
-                textAlign: 'center',
-                padding: '2rem'
-              }}>
-                [Image: Professional female cleaner in uniform (diverse - Chinese/South Asian), in hallway with supplies]
-              </div>
+              {/* Professional Cleaner Image */}
+              <Image
+                src="/images/cleaner-professional.svg"
+                alt="Professional cleaner in uniform"
+                width={600}
+                height={800}
+                style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+              />
             </motion.div>
           </div>
         </div>
@@ -517,20 +521,13 @@ const Home: NextPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              {/* Image placeholder */}
-              <div style={{
-                background: 'linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)',
-                minHeight: '220px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#1e40af',
-                fontSize: '0.9rem',
-                textAlign: 'center',
-                padding: '1rem'
-              }}>
-                [Image: Smiling female cleaner (Scottish) in home]
-              </div>
+              <Image
+                src="/images/cleaner-professional.svg"
+                alt="Smiling professional cleaner"
+                width={800}
+                height="600"
+                style={{ width: '100%', height: '220px', objectFit: 'cover', objectPosition: 'center' }}
+              />
               <div style={{ padding: '2rem' }}>
                 <h3 style={{ color: '#1e293b', fontSize: '1.5rem', marginBottom: '1rem', fontWeight: 600 }}>
                   Recurring cleaning
@@ -555,20 +552,13 @@ const Home: NextPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              {/* Image placeholder */}
-              <div style={{
-                background: 'linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)',
-                minHeight: '220px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#1e40af',
-                fontSize: '0.9rem',
-                textAlign: 'center',
-                padding: '1rem'
-              }}>
-                [Image: Professional cleaning products bottles]
-              </div>
+              <Image
+                src="/images/cleaning-service.svg"
+                alt="Professional cleaning products"
+                width={800}
+                height={600}
+                style={{ width: '100%', height: '220px', objectFit: 'cover', objectPosition: 'center' }}
+              />
               <div style={{ padding: '2rem' }}>
                 <h3 style={{ color: '#1e293b', fontSize: '1.5rem', marginBottom: '1rem', fontWeight: 600 }}>
                   Detailed cleaning
