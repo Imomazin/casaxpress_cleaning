@@ -55,8 +55,8 @@ const Custom404: NextPage = () => {
               lineHeight: '1.8',
               marginBottom: '2.5rem'
             }}>
-              Looks like this page has been swept away! The page you're looking for
-              doesn't exist or may have been moved.
+              Looks like this page has been swept away! The page you&apos;re looking for
+              doesn&apos;t exist or may have been moved.
             </p>
 
             <div style={{

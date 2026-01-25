@@ -277,7 +277,7 @@ const About: NextPage = () => {
                 Local Scottish Service
               </h3>
               <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: '1.7' }}>
-                Born and bred in Scotland. We're part of your community, and we
+                Born and bred in Scotland. We&apos;re part of your community, and we
                 take pride in serving our neighbours.
               </p>
             </motion.div>
@@ -298,10 +298,10 @@ const About: NextPage = () => {
             <h2 style={{ marginBottom: '1.5rem' }}>Our Commitment to You</h2>
             <p style={{ fontSize: '1.1rem', color: '#64748b', lineHeight: '1.9', marginBottom: '1.5rem' }}>
               At Strathmore Cleaning, we believe that a clean home is more than just tidy
-              surfaces—it's about creating a space where you feel comfortable, safe, and at peace.
+              surfaces—it&apos;s about creating a space where you feel comfortable, safe, and at peace.
             </p>
             <p style={{ fontSize: '1.1rem', color: '#64748b', lineHeight: '1.9', marginBottom: '1.5rem' }}>
-              We understand that inviting someone into your home requires trust. That's why
+              We understand that inviting someone into your home requires trust. That&apos;s why
               we carefully vet every team member, provide comprehensive training, and maintain
               the highest standards of professionalism and respect.
             </p>

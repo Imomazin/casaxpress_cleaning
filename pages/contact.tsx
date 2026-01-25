@@ -9,7 +9,7 @@ const Contact: NextPage = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     // Placeholder - form submission not implemented
-    setFormStatus('Thank you for your message! We'll get back to you within 24 hours.')
+    setFormStatus("Thank you for your message! We'll get back to you within 24 hours.")
     setTimeout(() => setFormStatus(''), 5000)
   }
 
@@ -31,11 +31,11 @@ const Contact: NextPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="section-badge">Let's Talk</span>
+            <span className="section-badge">Let&apos;s Talk</span>
             <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>Get in Touch</h1>
             <p style={{ maxWidth: '650px', margin: '0 auto' }}>
-              We'd love to hear from you. Whether you need a quick quote or want to discuss
-              your cleaning needs, we're here to help—no pressure, just friendly advice.
+              We&apos;d love to hear from you. Whether you need a quick quote or want to discuss
+              your cleaning needs, we&apos;re here to help—no pressure, just friendly advice.
             </p>
           </motion.div>
         </div>
@@ -53,7 +53,7 @@ const Contact: NextPage = () => {
             >
               <span className="section-badge">How to Reach Us</span>
               <h2>Choose Your Preferred Method</h2>
-              <p>We're flexible and responsive—contact us however works best for you</p>
+              <p>We&apos;re flexible and responsive—contact us however works best for you</p>
             </motion.div>
           </div>
 
@@ -193,10 +193,10 @@ const Contact: NextPage = () => {
               transition={{ duration: 0.6 }}
             >
               <h3 style={{ fontSize: '1.75rem', marginBottom: '1.5rem', color: '#1e293b' }}>
-                We're Here to Help
+                We&apos;re Here to Help
               </h3>
               <p style={{ color: '#64748b', lineHeight: '1.8', marginBottom: '2rem' }}>
-                Whether you need a one-off deep clean or regular weekly service, we're ready to
+                Whether you need a one-off deep clean or regular weekly service, we&apos;re ready to
                 discuss your needs. No obligation, no pressure—just honest advice and transparent pricing.
               </p>
 
@@ -229,7 +229,7 @@ const Contact: NextPage = () => {
                   🌟 First-Time Customer Guarantee
                 </p>
                 <p style={{ fontSize: '0.9rem', color: '#64748b', lineHeight: '1.6' }}>
-                  Not happy with your first clean? We'll make it right or refund you in full.
+                  Not happy with your first clean? We&apos;ll make it right or refund you in full.
                   Your satisfaction is our priority.
                 </p>
               </div>
@@ -252,7 +252,7 @@ const Contact: NextPage = () => {
                 Send Us a Message
               </h3>
               <p style={{ color: '#64748b', marginBottom: '1.5rem', fontSize: '0.95rem' }}>
-                Fill out the form below and we'll get back to you as soon as possible
+                Fill out the form below and we&apos;ll get back to you as soon as possible
               </p>
 
               <form onSubmit={handleSubmit} className="contact-form" style={{ maxWidth: 'none' }}>
