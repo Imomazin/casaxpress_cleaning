@@ -16,7 +16,19 @@ const About: NextPage = () => {
       </Head>
 
       {/* Hero */}
-      <section className="hero" style={{ padding: '4rem 0 3rem' }}>
+      <section className="hero" style={{ padding: '4rem 0 3rem', position: 'relative', overflow: 'hidden' }}>
+        {/* Green Decorative Elements */}
+        <div style={{
+          position: 'absolute',
+          top: '30%',
+          right: '10%',
+          width: '80px',
+          height: '4px',
+          background: '#a3e635',
+          transform: 'rotate(-45deg)',
+          opacity: 0.5
+        }} />
+
         <div className="container hero-content">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -24,6 +36,14 @@ const About: NextPage = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="section-badge">Our Story</span>
+            <div style={{ display: 'inline-block' }}>
+              <div style={{
+                width: '60px',
+                height: '4px',
+                background: '#a3e635',
+                marginBottom: '0.5rem'
+              }} />
+            </div>
             <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>About CasaXpress</h1>
             <p className="tagline" style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>
               Bright Energy • Gentle Care • Professional Results

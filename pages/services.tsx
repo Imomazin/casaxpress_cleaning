@@ -16,7 +16,19 @@ const Services: NextPage = () => {
       </Head>
 
       {/* Hero */}
-      <section className="hero" style={{ padding: '4rem 0 3rem' }}>
+      <section className="hero" style={{ padding: '4rem 0 3rem', position: 'relative', overflow: 'hidden' }}>
+        {/* Green Decorative Elements */}
+        <div style={{
+          position: 'absolute',
+          top: '25%',
+          left: '8%',
+          width: '70px',
+          height: '4px',
+          background: '#a3e635',
+          transform: 'rotate(30deg)',
+          opacity: 0.5
+        }} />
+
         <div className="container hero-content">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -24,6 +36,14 @@ const Services: NextPage = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="section-badge">Simple, Transparent Pricing</span>
+            <div style={{ display: 'inline-block' }}>
+              <div style={{
+                width: '60px',
+                height: '4px',
+                background: '#a3e635',
+                marginBottom: '0.5rem'
+              }} />
+            </div>
             <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>Services & Pricing</h1>
             <p style={{ maxWidth: '650px', margin: '0 auto' }}>
               Professional cleaning services tailored to your needs. No hidden fees, no surprises—just exceptional service.

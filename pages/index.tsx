@@ -35,8 +35,31 @@ const Home: NextPage = () => {
         backgroundAttachment: 'fixed',
         color: 'white',
         textAlign: 'center',
-        padding: '6rem 1rem'
+        padding: '6rem 1rem',
+        overflow: 'hidden'
       }}>
+        {/* Green Decorative Elements */}
+        <div style={{
+          position: 'absolute',
+          top: '10%',
+          right: '5%',
+          width: '120px',
+          height: '4px',
+          background: '#a3e635',
+          transform: 'rotate(-45deg)',
+          opacity: 0.6
+        }} />
+        <div style={{
+          position: 'absolute',
+          bottom: '15%',
+          left: '8%',
+          width: '80px',
+          height: '4px',
+          background: '#a3e635',
+          transform: 'rotate(45deg)',
+          opacity: 0.6
+        }} />
+
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -186,7 +209,18 @@ const Home: NextPage = () => {
 
       {/* Life, made possible section */}
       {/* IMAGE NEEDED: Parent and child reading together on couch, warm Scottish home interior */}
-      <section className="content-section" style={{ paddingTop: '6rem' }}>
+      <section className="content-section" style={{ paddingTop: '6rem', position: 'relative', overflow: 'hidden' }}>
+        {/* Green Decorative Line */}
+        <div style={{
+          position: 'absolute',
+          top: '15%',
+          left: '0',
+          width: '100px',
+          height: '4px',
+          background: '#a3e635',
+          opacity: 0.7
+        }} />
+
         <div className="container">
           <div style={{
             display: 'grid',
@@ -202,14 +236,21 @@ const Home: NextPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 style={{
-                fontSize: 'clamp(2rem, 4vw, 3rem)',
-                marginBottom: '1.5rem',
-                color: '#1e293b',
-                lineHeight: 1.3
-              }}>
-                <span style={{ fontStyle: 'italic', fontWeight: 400, fontFamily: 'Georgia, serif' }}>Life,</span> made possible with CasaXpress
-              </h2>
+              <div style={{ position: 'relative', marginBottom: '1.5rem' }}>
+                <div style={{
+                  width: '60px',
+                  height: '4px',
+                  background: '#a3e635',
+                  marginBottom: '1rem'
+                }} />
+                <h2 style={{
+                  fontSize: 'clamp(2rem, 4vw, 3rem)',
+                  color: '#1e293b',
+                  lineHeight: 1.3
+                }}>
+                  <span style={{ fontStyle: 'italic', fontWeight: 400, fontFamily: 'Georgia, serif' }}>Life,</span> made possible with CasaXpress
+                </h2>
+              </div>
               <p style={{ fontSize: '1.05rem', color: '#64748b', lineHeight: '1.9', marginBottom: '1.25rem' }}>
                 Life&apos;s too short to spend time cleaning the house! Between work, family, and trying to squeeze in a
                 little fun, your to-do list is long, but your free time is in short supply. With CasaXpress you won&apos;t
@@ -367,7 +408,19 @@ const Home: NextPage = () => {
 
       {/* We promise you'll love section */}
       {/* IMAGE NEEDED: Female cleaner (Chinese or South Asian descent) in professional uniform, standing in bright hallway with cleaning supplies, friendly and professional. Scottish home interior. */}
-      <section className="content-section">
+      <section className="content-section" style={{ position: 'relative', overflow: 'hidden' }}>
+        {/* Green Decorative Elements */}
+        <div style={{
+          position: 'absolute',
+          top: '20%',
+          right: '5%',
+          width: '90px',
+          height: '4px',
+          background: '#a3e635',
+          transform: 'rotate(-30deg)',
+          opacity: 0.6
+        }} />
+
         <div className="container">
           <div style={{
             display: 'grid',
@@ -383,14 +436,21 @@ const Home: NextPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 style={{
-                fontSize: 'clamp(2rem, 4vw, 2.75rem)',
-                marginBottom: '1.5rem',
-                color: '#1e293b',
-                lineHeight: 1.3
-              }}>
-                We promise you&apos;ll love our exceptional clean
-              </h2>
+              <div style={{ marginBottom: '1.5rem' }}>
+                <div style={{
+                  width: '60px',
+                  height: '4px',
+                  background: '#a3e635',
+                  marginBottom: '1rem'
+                }} />
+                <h2 style={{
+                  fontSize: 'clamp(2rem, 4vw, 2.75rem)',
+                  color: '#1e293b',
+                  lineHeight: 1.3
+                }}>
+                  We promise you&apos;ll love our exceptional clean
+                </h2>
+              </div>
               <p style={{ fontSize: '1.05rem', color: '#64748b', lineHeight: '1.9', marginBottom: '1.25rem' }}>
                 Our 5-Star Promise means delivering exceptional service in every interaction. We strive to anticipate your needs, exceed your expectations,
                 and create a premium, memorable experience worthy of a 5-star rating.
@@ -608,13 +668,20 @@ const Home: NextPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 style={{
-                fontSize: 'clamp(2rem, 4vw, 2.75rem)',
-                marginBottom: '2rem',
-                color: '#1e293b'
-              }}>
-                Here to <span style={{ fontStyle: 'italic', fontFamily: 'Georgia, serif' }}>help</span>
-              </h2>
+              <div style={{ marginBottom: '2rem' }}>
+                <div style={{
+                  width: '60px',
+                  height: '4px',
+                  background: '#a3e635',
+                  marginBottom: '1rem'
+                }} />
+                <h2 style={{
+                  fontSize: 'clamp(2rem, 4vw, 2.75rem)',
+                  color: '#1e293b'
+                }}>
+                  Here to <span style={{ fontStyle: 'italic', fontFamily: 'Georgia, serif' }}>help</span>
+                </h2>
+              </div>
 
               {/* FAQ Accordion */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>

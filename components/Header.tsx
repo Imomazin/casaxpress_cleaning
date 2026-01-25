@@ -12,7 +12,27 @@ export default function Header() {
     <header className="header">
       <div className="container header-container">
         <Link href="/" className="logo">
-          <span className="logo-text">CasaXpress</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <div style={{
+              background: '#a3e635',
+              width: '45px',
+              height: '45px',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 700,
+              fontSize: '1.1rem',
+              color: '#1e293b',
+              fontFamily: 'system-ui, -apple-system, sans-serif'
+            }}>
+              CX
+            </div>
+            <span className="logo-text">
+              <span style={{ color: '#1e293b' }}>Casa</span>
+              <span style={{ color: '#a3e635' }}>Xpress</span>
+            </span>
+          </div>
         </Link>
 
         <nav className="nav">
