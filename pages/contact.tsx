@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import { FormEvent, useState } from 'react'
 
 const Contact: NextPage = () => {
@@ -7,7 +8,6 @@ const Contact: NextPage = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // Placeholder - form submission not implemented
     setFormStatus('Thank you for your message. We will get back to you shortly.')
     setTimeout(() => setFormStatus(''), 5000)
   }
@@ -15,35 +15,44 @@ const Contact: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Contact Us - Strathmore Cleaning</title>
+        <title>Contact Us - CasaXpress</title>
         <meta
           name="description"
-          content="Get in touch with Strathmore Cleaning for a free quote or to discuss your cleaning requirements."
+          content="Get in touch with CasaXpress for care at home enquiries or to book a home cleaning service."
         />
       </Head>
 
       <section className="content-section">
         <div className="container">
-          <h2>Contact Us</h2>
+          <h2>Get in Touch</h2>
 
-          <p style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 3rem' }}>
-            We would love to hear from you. Get in touch for a free, no-obligation
-            quote or to discuss your cleaning requirements.
+          <p style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 1.5rem' }}>
+            We are here to help with both care at home and home cleaning enquiries.
+            Get in touch and our team will be happy to assist.
           </p>
+
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>
+              Looking specifically for care support?{' '}
+              <Link href="/care/enquiry" style={{ fontWeight: 600 }}>
+                Use our dedicated care enquiry form
+              </Link>
+            </p>
+          </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', maxWidth: '1000px', margin: '0 auto' }}>
             <div>
               <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>
-                Get in Touch
+                Contact Details
               </h3>
 
               <div style={{ marginBottom: '2rem' }}>
                 <h4 style={{ fontSize: '1.125rem', marginBottom: '0.5rem', fontWeight: 600 }}>
                   Email
                 </h4>
-                <p style={{ color: '#666' }}>
-                  <a href="mailto:info@strathmorecleaning.co.uk">
-                    info@strathmorecleaning.co.uk
+                <p style={{ color: 'var(--text-secondary)' }}>
+                  <a href="mailto:hello@casaxpress.co.uk">
+                    hello@casaxpress.co.uk
                   </a>
                 </p>
               </div>
@@ -52,8 +61,8 @@ const Contact: NextPage = () => {
                 <h4 style={{ fontSize: '1.125rem', marginBottom: '0.5rem', fontWeight: 600 }}>
                   Phone
                 </h4>
-                <p style={{ color: '#666' }}>
-                  <a href="tel:+441234567890">01234 567890</a>
+                <p style={{ color: 'var(--text-secondary)' }}>
+                  <a href="tel:+441234567890">01234 567 890</a>
                 </p>
               </div>
 
@@ -61,9 +70,9 @@ const Contact: NextPage = () => {
                 <h4 style={{ fontSize: '1.125rem', marginBottom: '0.5rem', fontWeight: 600 }}>
                   Service Areas
                 </h4>
-                <p style={{ color: '#666' }}>
-                  We provide cleaning services throughout the UK. Contact us to
-                  confirm we operate in your area.
+                <p style={{ color: 'var(--text-secondary)' }}>
+                  We provide care and cleaning services throughout the UK.
+                  Contact us to confirm availability in your area.
                 </p>
               </div>
 
@@ -71,7 +80,7 @@ const Contact: NextPage = () => {
                 <h4 style={{ fontSize: '1.125rem', marginBottom: '0.5rem', fontWeight: 600 }}>
                   Opening Hours
                 </h4>
-                <p style={{ color: '#666' }}>
+                <p style={{ color: 'var(--text-secondary)' }}>
                   Monday - Friday: 8:00 AM - 6:00 PM<br />
                   Saturday: 9:00 AM - 4:00 PM<br />
                   Sunday: Closed
@@ -113,8 +122,19 @@ const Contact: NextPage = () => {
                     type="tel"
                     id="phone"
                     name="phone"
-                    placeholder="01234 567890"
+                    placeholder="01234 567 890"
                   />
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="service">Service Interest</label>
+                  <select id="service" name="service">
+                    <option value="">Please select</option>
+                    <option value="cleaning">Home Cleaning</option>
+                    <option value="care">Care at Home</option>
+                    <option value="both">Both Services</option>
+                    <option value="other">Other</option>
+                  </select>
                 </div>
 
                 <div className="form-group">
@@ -123,27 +143,18 @@ const Contact: NextPage = () => {
                     id="message"
                     name="message"
                     required
-                    placeholder="Tell us about your cleaning requirements..."
+                    placeholder="Tell us about your requirements..."
                   />
                 </div>
 
-                <button type="submit" className="btn" style={{ width: '100%' }}>
+                <button type="submit" className="btn btn-care" style={{ width: '100%' }}>
                   Send Message
                 </button>
 
                 {formStatus && (
-                  <p
-                    style={{
-                      marginTop: '1rem',
-                      padding: '1rem',
-                      backgroundColor: '#d4edda',
-                      color: '#155724',
-                      borderRadius: '4px',
-                      textAlign: 'center',
-                    }}
-                  >
+                  <div className="form-success">
                     {formStatus}
-                  </p>
+                  </div>
                 )}
               </form>
             </div>
