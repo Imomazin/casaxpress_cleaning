@@ -436,7 +436,7 @@ ul, ol {
 .gateway__grid {
   flex: 1;
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   padding: 1.5rem 24px 3rem;
   max-width: 1400px;
@@ -483,7 +483,7 @@ ul, ol {
 
 .gateway__card-image {
   width: 100%;
-  height: 55%;
+  height: 320px;
   object-fit: cover;
   display: block;
 }
