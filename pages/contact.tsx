@@ -44,14 +44,14 @@ const Contact: NextPage = () => {
               <div style={{ marginBottom: '2rem' }}>
                 <h4 style={{ fontSize: '1rem', marginBottom: '0.35rem', fontWeight: 600 }}>Email</h4>
                 <p style={{ color: 'var(--text-secondary)' }}>
-                  <a href="mailto:hello@casaxpress.co.uk" style={{ color: 'var(--care-primary)' }}>hello@casaxpress.co.uk</a>
+                  <a href="mailto:casaxpress.ae@gmail.com" style={{ color: 'var(--care-primary)' }}>casaxpress.ae@gmail.com</a>
                 </p>
               </div>
 
               <div style={{ marginBottom: '2rem' }}>
                 <h4 style={{ fontSize: '1rem', marginBottom: '0.35rem', fontWeight: 600 }}>Phone</h4>
                 <p style={{ color: 'var(--text-secondary)' }}>
-                  <a href="tel:+441234567890" style={{ color: 'var(--care-primary)' }}>01234 567 890</a>
+                  <a href="tel:+447398761877" style={{ color: 'var(--care-primary)' }}>07398 761 877</a>
                 </p>
               </div>
 
@@ -86,7 +86,7 @@ const Contact: NextPage = () => {
                 </div>
                 <div className="form-group">
                   <label htmlFor="phone">Phone</label>
-                  <input type="tel" id="phone" name="phone" placeholder="01234 567 890" />
+                  <input type="tel" id="phone" name="phone" placeholder="07398 761 877" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="service">Service Interest</label>

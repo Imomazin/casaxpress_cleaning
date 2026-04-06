@@ -22,6 +22,7 @@ const PersonalCare: NextPage = () => {
               by genuine warmth and sensitivity.
             </p>
             <Link href="/care/enquiry" className="btn btn-care">Arrange Personal Care</Link>
+            <p style={{ marginTop: '0.75rem', fontSize: '0.875rem', color: 'var(--text-muted)' }}>or call us on <a href="tel:+447398761877" style={{ color: 'var(--care-primary)', fontWeight: 600 }}>07398 761 877</a></p>
           </div>
           <div className="care-subhero__image">
             <img src="/images/IMG 1 (1).JPG" alt="Carer providing personal care with warmth and respect" />

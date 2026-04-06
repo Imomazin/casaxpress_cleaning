@@ -176,9 +176,8 @@ const Cleaning: NextPage = () => {
           </div>
           <TestimonialCards
             testimonials={[
-              { text: 'CasaXpress has been cleaning our home for months now. Always on time, always thorough, and the house is spotless every time. Highly recommend.', author: 'Rachel K.', role: 'Regular cleaning client', variant: 'clean' },
-              { text: 'Used them for an end of tenancy clean and the results were fantastic. Got our full deposit back. Professional and reliable.', author: 'Mark S.', role: 'End of tenancy client', variant: 'clean' },
-              { text: 'The deep clean was exactly what our home needed. They reached places we did not even think of. Very pleased with the service.', author: 'Emma J.', role: 'Deep cleaning client', variant: 'clean' },
+              { text: 'The cleaning team are consistent and thorough. They turn up when they say they will and the house always feels fresh afterwards. Easy to work with.', author: 'Rachel K.', role: 'Regular client', variant: 'clean' },
+              { text: 'Booked an end of tenancy clean and the results were spot on. The letting agent had no issues at all. Would use again without hesitation.', author: 'Mark S.', role: 'Client', variant: 'clean' },
             ]}
           />
         </div>

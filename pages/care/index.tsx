@@ -146,6 +146,12 @@ const CareHome: NextPage = () => {
                 <Link href="/care/dementia-support" className="service-card__link service-card__link--care">Learn more &rarr;</Link>
               </div>
             </div>
+
+            <div className="service-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', background: 'var(--care-bg)', border: '1px dashed var(--care-border)', minHeight: '200px' }}>
+              <h3 style={{ marginBottom: '0.5rem' }}>Live-In &amp; Overnight Care</h3>
+              <p style={{ marginBottom: '0.75rem' }}>Round-the-clock support for those who need a greater level of presence at home.</p>
+              <span style={{ display: 'inline-block', padding: '0.3rem 0.85rem', borderRadius: '50px', background: 'var(--care-primary)', color: '#fff', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.04em' }}>Coming Soon</span>
+            </div>
           </div>
         </div>
       </section>
@@ -242,8 +248,35 @@ const CareHome: NextPage = () => {
         </div>
       </section>
 
-      {/* HOW CARE BEGINS */}
+      {/* TRUST & SAFETY */}
       <section className="section section--care">
+        <div className="container">
+          <div className="section__header">
+            <span className="section__badge section__badge--care">Trust &amp; Safety</span>
+            <h2 className="section__title">Your peace of mind matters</h2>
+          </div>
+          <div className="trust-grid">
+            <div className="trust-card">
+              <div className="trust-card__icon trust-card__icon--care">&#128274;</div>
+              <h3 className="trust-card__title">Carefully Selected Team</h3>
+              <p className="trust-card__text">Every member of our care team is carefully selected, interviewed, and trained to deliver dependable home support.</p>
+            </div>
+            <div className="trust-card">
+              <div className="trust-card__icon trust-card__icon--care">&#9876;</div>
+              <h3 className="trust-card__title">Dignity &amp; Respect</h3>
+              <p className="trust-card__text">All care is delivered with a focus on dignity, respect, and the individual needs of the person we are supporting.</p>
+            </div>
+            <div className="trust-card">
+              <div className="trust-card__icon trust-card__icon--care">&#129309;</div>
+              <h3 className="trust-card__title">Family Involvement</h3>
+              <p className="trust-card__text">We work closely with families to ensure the right level of support is in place and everyone feels informed and confident.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* HOW CARE BEGINS */}
+      <section className="section section--white">
         <div className="container">
           <div className="section__header">
             <h2 className="section__title">How care begins</h2>
@@ -270,9 +303,9 @@ const CareHome: NextPage = () => {
 
           <TestimonialCards
             testimonials={[
-              { text: 'The team has been absolutely wonderful with my mother. They treat her with such kindness and patience. We feel confident she is in safe, caring hands.', author: 'Helen R.', role: 'Daughter of care client', variant: 'care' },
-              { text: 'After Dad came home from hospital, CasaXpress stepped in quickly and their support helped him get back on his feet. We cannot thank them enough.', author: 'David P.', role: 'Son of care client', variant: 'care' },
-              { text: 'Mum was reluctant at first, but within a week she was looking forward to her visits. The companionship has made such a difference to her wellbeing.', author: 'Linda W.', role: 'Daughter of care client', variant: 'care' },
+              { text: 'The support has made a real difference for my mum. She looks forward to her visits now and the carers always remember the little things that matter to her.', author: 'Sarah M.', role: 'Family member', variant: 'care' },
+              { text: 'We needed help quite quickly after Dad was discharged and CasaXpress made the whole process straightforward. No pressure, just practical support from day one.', author: 'James T.', role: 'Family member', variant: 'care' },
+              { text: 'Having someone reliable come in a few times a week has taken a real weight off our shoulders. Mum is more settled and we worry less knowing she is looked after.', author: 'Karen L.', role: 'Family member', variant: 'care' },
             ]}
           />
         </div>
@@ -305,8 +338,8 @@ const CareHome: NextPage = () => {
         text="Our friendly team is here to help you find the right support. Start a conversation today."
         primaryLabel="Start a Care Enquiry"
         primaryHref="/care/enquiry"
-        secondaryLabel="Or call us on 01234 567 890"
-        secondaryHref="tel:+441234567890"
+        secondaryLabel="Or call us on 07398 761 877"
+        secondaryHref="tel:+447398761877"
       />
     </>
   )
