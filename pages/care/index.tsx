@@ -21,7 +21,7 @@ const CareHome: NextPage = () => {
       <section className="hero hero--care">
         <div className="container hero-grid">
           <div className="hero__content">
-            <span className="hero__badge">Care at Home</span>
+            <span className="hero__badge hero__badge--care">Care at Home</span>
             <h1>
               Compassionate adult care at home, built around <em>everyday life</em>
             </h1>
@@ -48,11 +48,17 @@ const CareHome: NextPage = () => {
         </div>
       </section>
 
-      {/* INTRO BLOCK */}
-      <section className="section">
+      {/* INTRO */}
+      <section className="section section--white">
         <div className="container">
-          <div className="care-intro">
-            <div className="care-intro__content">
+          <div className="image-text">
+            <div className="image-text__image">
+              <img
+                src="/images/IMG 10 (1).JPG"
+                alt="Carer supporting client with warmth and genuine care"
+              />
+            </div>
+            <div className="image-text__content">
               <h2>Support that helps people live well at home</h2>
               <p>
                 CasaXpress Care at Home is built on a simple belief: that people
@@ -67,28 +73,19 @@ const CareHome: NextPage = () => {
               </p>
               <p>
                 We work closely with families to understand what matters most,
-                and we shape our support around those needs, not the other way
-                around.
+                and we shape our support around those needs.
               </p>
-            </div>
-            <div className="care-intro__image">
-              <img
-                src="/images/IMG 10 (1).JPG"
-                alt="Carer supporting client with warmth and genuine care"
-              />
             </div>
           </div>
         </div>
       </section>
 
       {/* SERVICE GRID */}
-      <section className="section section--ivory" id="services">
+      <section className="section section--care" id="services">
         <div className="container">
           <div className="section__header">
-            <span className="section__badge">Our Care Services</span>
-            <h2 className="section__title">
-              Support tailored to individual needs
-            </h2>
+            <span className="section__badge section__badge--care">Our Care Services</span>
+            <h2 className="section__title">Support tailored to individual needs</h2>
             <p className="section__subtitle">
               From personal care to companionship, our services are designed to help
               adults maintain comfort, routine, and quality of life at home.
@@ -96,120 +93,75 @@ const CareHome: NextPage = () => {
           </div>
 
           <div className="services-grid">
-            <div className="service-card service-card--image service-card--care">
-              <img
-                src="/images/IMG 1 (1).JPG"
-                alt="Carer providing personal care support"
-              />
+            <div className="service-card service-card--image">
+              <img src="/images/IMG 1 (1).JPG" alt="Personal care support" />
               <div className="service-card__body">
                 <h3>Personal Care</h3>
-                <p>
-                  Respectful help with washing, dressing, and grooming,
-                  tailored to individual routines and preferences.
-                </p>
-                <Link href="/care/personal-care" className="service-card__link">
-                  Learn more &rarr;
-                </Link>
+                <p>Respectful help with washing, dressing, and grooming, tailored to individual routines.</p>
+                <Link href="/care/personal-care" className="service-card__link service-card__link--care">Learn more &rarr;</Link>
               </div>
             </div>
 
-            <div className="service-card service-card--image service-card--care">
-              <img
-                src="/images/IMG 4.JPG"
-                alt="Companionship and social support"
-              />
+            <div className="service-card service-card--image">
+              <img src="/images/IMG 4.JPG" alt="Companionship care" />
               <div className="service-card__body">
                 <h3>Companionship</h3>
-                <p>
-                  Friendly visits that bring conversation, social connection,
-                  and emotional wellbeing into everyday life.
-                </p>
-                <Link href="/care/companionship" className="service-card__link">
-                  Learn more &rarr;
-                </Link>
+                <p>Friendly visits bringing conversation, connection, and emotional wellbeing into everyday life.</p>
+                <Link href="/care/companionship" className="service-card__link service-card__link--care">Learn more &rarr;</Link>
               </div>
             </div>
 
-            <div className="service-card service-card--image service-card--care">
-              <img
-                src="/images/IMG 3.JPG"
-                alt="Support with daily living and mobility"
-              />
+            <div className="service-card service-card--image">
+              <img src="/images/IMG 3.JPG" alt="Daily living support" />
               <div className="service-card__body">
                 <h3>Daily Living Support</h3>
-                <p>
-                  Help with meals, light household tasks, errands, and the
-                  everyday routines that keep life running smoothly.
-                </p>
-                <Link href="/care/daily-living-support" className="service-card__link">
-                  Learn more &rarr;
-                </Link>
+                <p>Help with meals, light household tasks, errands, and everyday routines.</p>
+                <Link href="/care/daily-living-support" className="service-card__link service-card__link--care">Learn more &rarr;</Link>
               </div>
             </div>
 
-            <div className="service-card service-card--image service-card--care">
-              <img
-                src="/images/IMG 9 (1).JPG"
-                alt="Respite care and family support"
-              />
+            <div className="service-card service-card--image">
+              <img src="/images/IMG 9 (1).JPG" alt="Respite care" />
               <div className="service-card__body">
                 <h3>Respite Care</h3>
-                <p>
-                  Temporary, dependable support so family carers can take a
-                  well-deserved break with complete peace of mind.
-                </p>
-                <Link href="/care/respite-care" className="service-card__link">
-                  Learn more &rarr;
-                </Link>
+                <p>Temporary, dependable support so family carers can take a well-deserved break.</p>
+                <Link href="/care/respite-care" className="service-card__link service-card__link--care">Learn more &rarr;</Link>
               </div>
             </div>
 
-            <div className="service-card service-card--image service-card--care">
-              <img
-                src="/images/IMG 5 (1).JPG"
-                alt="Recovery and post-hospital support"
-              />
+            <div className="service-card service-card--image">
+              <img src="/images/IMG 5 (1).JPG" alt="Recovery support" />
               <div className="service-card__body">
                 <h3>Recovery Support</h3>
-                <p>
-                  Helping people regain confidence and routine after illness
-                  or a hospital stay, in the comfort of home.
-                </p>
-                <Link href="/care/recovery-support" className="service-card__link">
-                  Learn more &rarr;
-                </Link>
+                <p>Helping people regain confidence and routine after illness or a hospital stay.</p>
+                <Link href="/care/recovery-support" className="service-card__link service-card__link--care">Learn more &rarr;</Link>
               </div>
             </div>
 
-            <div className="service-card service-card--image service-card--care">
-              <img
-                src="/images/IMG 7 (1).JPG"
-                alt="Gentle support for those with memory-related challenges"
-              />
+            <div className="service-card service-card--image">
+              <img src="/images/IMG 7 (1).JPG" alt="Dementia support" />
               <div className="service-card__body">
                 <h3>Dementia Support</h3>
-                <p>
-                  Gentle, person-centred support for individuals living with
-                  memory-related challenges, and reassurance for families.
-                </p>
-                <Link href="/care/dementia-support" className="service-card__link">
-                  Learn more &rarr;
-                </Link>
+                <p>Gentle, person-centred support for individuals living with memory-related challenges.</p>
+                <Link href="/care/dementia-support" className="service-card__link service-card__link--care">Learn more &rarr;</Link>
               </div>
+            </div>
+
+            <div className="service-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', background: 'var(--care-bg)', border: '1px dashed var(--care-border)', minHeight: '200px' }}>
+              <h3 style={{ marginBottom: '0.5rem' }}>Live-In &amp; Overnight Care</h3>
+              <p style={{ marginBottom: '0.75rem' }}>Round-the-clock support for those who need a greater level of presence at home.</p>
+              <span style={{ display: 'inline-block', padding: '0.3rem 0.85rem', borderRadius: '50px', background: 'var(--care-primary)', color: '#fff', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.04em' }}>Coming Soon</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* PERSON-CENTRED CARE BLOCK */}
-      <section className="section">
+      {/* PERSON-CENTRED */}
+      <section className="section section--white">
         <div className="container">
           <div className="image-text image-text--reverse">
             <div className="image-text__image">
-              <img
-                src="/images/IMG 8 (1).JPG"
-                alt="Carer reviewing a personalised care plan with a client"
-              />
+              <img src="/images/IMG 8 (1).JPG" alt="Carer reviewing a personalised care plan" />
             </div>
             <div className="image-text__content">
               <h2>Person-centred care, every visit</h2>
@@ -219,10 +171,9 @@ const CareHome: NextPage = () => {
                 what makes them feel comfortable and supported.
               </p>
               <p>
-                Every care plan is built around the person, not around a template.
+                Every care plan is built around the person, not a template.
                 Whether support is needed for a few hours a week or every day,
-                we shape our service to fit naturally into the life and preferences
-                of the person we are supporting.
+                we shape our service to fit naturally into life.
               </p>
             </div>
           </div>
@@ -230,26 +181,22 @@ const CareHome: NextPage = () => {
       </section>
 
       {/* FAMILY REASSURANCE */}
-      <section className="section section--care-bg">
+      <section className="section section--care">
         <div className="container">
           <div className="image-text">
             <div className="image-text__image">
-              <img
-                src="/images/IMG 11 (1).JPG"
-                alt="Carer and client sharing a happy moment together"
-              />
+              <img src="/images/IMG 11 (1).JPG" alt="Carer and client sharing a happy moment" />
             </div>
             <div className="image-text__content">
               <h2>Reassurance for families</h2>
               <p>
-                We understand that arranging care for someone you love can feel
-                like a significant step. That is why we keep families informed
-                and involved at every stage.
+                Arranging care for someone you love can feel like a significant step.
+                That is why we keep families informed and involved at every stage.
               </p>
               <p>
                 From the first conversation to ongoing support, we communicate
-                openly and honestly. Families can feel confident that their
-                loved one is receiving thoughtful, consistent, and respectful care.
+                openly and honestly. Families can feel confident their loved one
+                is receiving thoughtful, consistent, and respectful care.
               </p>
               <Link href="/care/family-support" className="btn btn-care-outline">
                 Family Support &amp; FAQs
@@ -260,7 +207,7 @@ const CareHome: NextPage = () => {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="section">
+      <section className="section section--white">
         <div className="container">
           <div className="section__header">
             <h2 className="section__title">Why choose CasaXpress Care at Home</h2>
@@ -268,89 +215,87 @@ const CareHome: NextPage = () => {
 
           <div className="trust-grid">
             <div className="trust-card">
-              <div className="trust-card__icon">&#9829;</div>
+              <div className="trust-card__icon trust-card__icon--care">&#9829;</div>
               <h3 className="trust-card__title">Compassionate Approach</h3>
-              <p className="trust-card__text">
-                Kindness is at the heart of everything we do. Our team genuinely
-                cares about the people they support.
-              </p>
+              <p className="trust-card__text">Kindness is at the heart of everything we do. Our team genuinely cares about the people they support.</p>
             </div>
             <div className="trust-card">
-              <div className="trust-card__icon">&#128197;</div>
+              <div className="trust-card__icon trust-card__icon--care">&#128197;</div>
               <h3 className="trust-card__title">Dependable Scheduling</h3>
-              <p className="trust-card__text">
-                We keep to agreed times so families can plan with confidence.
-                Consistency builds trust.
-              </p>
+              <p className="trust-card__text">We keep to agreed times so families can plan with confidence. Consistency builds trust.</p>
             </div>
             <div className="trust-card">
-              <div className="trust-card__icon">&#129309;</div>
+              <div className="trust-card__icon trust-card__icon--care">&#129309;</div>
               <h3 className="trust-card__title">Thoughtful Matching</h3>
-              <p className="trust-card__text">
-                We match carers with clients based on personality, needs, and
-                preferences for the best possible relationship.
-              </p>
+              <p className="trust-card__text">We match carers with clients based on personality, needs, and preferences.</p>
             </div>
             <div className="trust-card">
-              <div className="trust-card__icon">&#9876;</div>
+              <div className="trust-card__icon trust-card__icon--care">&#9876;</div>
               <h3 className="trust-card__title">Dignified Support</h3>
-              <p className="trust-card__text">
-                Every person is treated with the respect and sensitivity they
-                deserve. We protect independence wherever possible.
-              </p>
+              <p className="trust-card__text">Every person is treated with the respect and sensitivity they deserve.</p>
             </div>
             <div className="trust-card">
-              <div className="trust-card__icon">&#128172;</div>
+              <div className="trust-card__icon trust-card__icon--care">&#128172;</div>
               <h3 className="trust-card__title">Clear Communication</h3>
-              <p className="trust-card__text">
-                We keep families informed and involved. Open, honest
-                communication is central to how we work.
-              </p>
+              <p className="trust-card__text">We keep families informed. Open, honest communication is central to how we work.</p>
             </div>
             <div className="trust-card">
-              <div className="trust-card__icon">&#8635;</div>
+              <div className="trust-card__icon trust-card__icon--care">&#8635;</div>
               <h3 className="trust-card__title">Flexible Services</h3>
-              <p className="trust-card__text">
-                Support can start small and grow as needs change. We adapt
-                our service to fit, not the other way around.
-              </p>
+              <p className="trust-card__text">Support can start small and grow as needs change. We adapt to fit, not the other way around.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TRUST & SAFETY */}
+      <section className="section section--care">
+        <div className="container">
+          <div className="section__header">
+            <span className="section__badge section__badge--care">Trust &amp; Safety</span>
+            <h2 className="section__title">Your peace of mind matters</h2>
+          </div>
+          <div className="trust-grid">
+            <div className="trust-card">
+              <div className="trust-card__icon trust-card__icon--care">&#128274;</div>
+              <h3 className="trust-card__title">Carefully Selected Team</h3>
+              <p className="trust-card__text">Every member of our care team is carefully selected, interviewed, and trained to deliver dependable home support.</p>
+            </div>
+            <div className="trust-card">
+              <div className="trust-card__icon trust-card__icon--care">&#9876;</div>
+              <h3 className="trust-card__title">Dignity &amp; Respect</h3>
+              <p className="trust-card__text">All care is delivered with a focus on dignity, respect, and the individual needs of the person we are supporting.</p>
+            </div>
+            <div className="trust-card">
+              <div className="trust-card__icon trust-card__icon--care">&#129309;</div>
+              <h3 className="trust-card__title">Family Involvement</h3>
+              <p className="trust-card__text">We work closely with families to ensure the right level of support is in place and everyone feels informed and confident.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* HOW CARE BEGINS */}
-      <section className="section section--ivory">
+      <section className="section section--white">
         <div className="container">
           <div className="section__header">
             <h2 className="section__title">How care begins</h2>
-            <p className="section__subtitle">
-              Starting care should feel simple and supportive.
-              Here is how it works.
-            </p>
+            <p className="section__subtitle">Starting care should feel simple and supportive.</p>
           </div>
 
           <ProcessSteps
+            variant="care"
             steps={[
-              {
-                title: 'Have an initial conversation',
-                text: 'Get in touch to tell us about the support you or your loved one needs. We listen carefully and take time to understand.',
-              },
-              {
-                title: 'We understand your needs',
-                text: 'We discuss routines, preferences, and the level of support required to create a plan that feels right.',
-              },
-              {
-                title: 'Support is arranged',
-                text: 'We match the right carer, agree on a schedule, and visits begin. We stay in touch to ensure everything is working well.',
-              },
+              { title: 'Have an initial conversation', text: 'Get in touch to tell us about the support needed. We listen carefully and take time to understand.' },
+              { title: 'We understand your needs', text: 'We discuss routines, preferences, and the level of support required to create a plan that feels right.' },
+              { title: 'Support is arranged', text: 'We match the right carer, agree on a schedule, and visits begin. We stay in touch to ensure everything works well.' },
             ]}
           />
         </div>
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="section">
+      <section className="section section--white">
         <div className="container">
           <div className="section__header">
             <h2 className="section__title">What families say</h2>
@@ -358,31 +303,16 @@ const CareHome: NextPage = () => {
 
           <TestimonialCards
             testimonials={[
-              {
-                text: 'The team has been absolutely wonderful with my mother. They treat her with such kindness and patience. We feel confident that she is in safe, caring hands every day.',
-                author: 'Helen R.',
-                role: 'Daughter of care client',
-                variant: 'care',
-              },
-              {
-                text: 'After Dad came home from hospital, we did not know where to turn. CasaXpress stepped in quickly and their support helped him get back on his feet. We cannot thank them enough.',
-                author: 'David P.',
-                role: 'Son of care client',
-                variant: 'care',
-              },
-              {
-                text: 'Mum was reluctant at first, but within a week she was looking forward to her visits. The companionship has made such a difference to her mood and confidence.',
-                author: 'Linda W.',
-                role: 'Daughter of care client',
-                variant: 'care',
-              },
+              { text: 'The support has made a real difference for my mum. She looks forward to her visits now and the carers always remember the little things that matter to her.', author: 'Sarah M.', role: 'Family member', variant: 'care' },
+              { text: 'We needed help quite quickly after Dad was discharged and CasaXpress made the whole process straightforward. No pressure, just practical support from day one.', author: 'James T.', role: 'Family member', variant: 'care' },
+              { text: 'Having someone reliable come in a few times a week has taken a real weight off our shoulders. Mum is more settled and we worry less knowing she is looked after.', author: 'Karen L.', role: 'Family member', variant: 'care' },
             ]}
           />
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="section section--ivory">
+      <section className="section section--care">
         <div className="container">
           <div className="section__header">
             <h2 className="section__title">Frequently asked questions</h2>
@@ -390,52 +320,26 @@ const CareHome: NextPage = () => {
 
           <FAQAccordion
             items={[
-              {
-                question: 'What types of care do you provide at home?',
-                answer: 'We offer a range of home care services including personal care, companionship, daily living support, respite care, recovery support after illness, and support for individuals living with memory-related challenges. Each service is tailored to individual needs.',
-              },
-              {
-                question: 'Is your support only for older adults?',
-                answer: 'While many of our clients are older adults, our care services are available to any adult who needs support at home. This may include people recovering from illness, those living with long-term conditions, or anyone who would benefit from regular in-home assistance.',
-              },
-              {
-                question: 'Can support be tailored to individual routines?',
-                answer: 'Absolutely. We take time to understand each person\'s routine, preferences, and what makes them comfortable. Every care plan is built around the individual, not a standard template.',
-              },
-              {
-                question: 'Do you offer companionship as well as practical help?',
-                answer: 'Yes. Companionship is one of our core services. Friendly conversation, social interaction, and emotional support are just as important as practical help. Many of our visits include both.',
-              },
-              {
-                question: 'Can families arrange support on behalf of a loved one?',
-                answer: 'Of course. Many of our enquiries come from family members who want to arrange support for a parent or relative. We are happy to speak with families and involve them in every step.',
-              },
-              {
-                question: 'How do I get started?',
-                answer: 'Simply get in touch by phone or through our care enquiry form. We will have an initial conversation to understand your needs and discuss how we can help. There is no obligation, and we are happy to answer any questions.',
-              },
-              {
-                question: 'Can support begin with just a few visits?',
-                answer: 'Yes. Many people start with a small number of visits per week and adjust as needs change. There is no minimum commitment, and we are flexible about increasing or decreasing support over time.',
-              },
-              {
-                question: 'Do you offer respite support for family carers?',
-                answer: 'We do. We understand the demands of caring for a loved one. Our respite service provides dependable cover so family carers can take a break, knowing their loved one is being well looked after.',
-              },
+              { question: 'What types of care do you provide at home?', answer: 'We offer personal care, companionship, daily living support, respite care, recovery support after illness, and support for individuals living with memory-related challenges. Each service is tailored to individual needs.' },
+              { question: 'Is your support only for older adults?', answer: 'While many of our clients are older adults, our care services are available to any adult who needs support at home. This includes people recovering from illness, those with long-term conditions, or anyone who would benefit from regular in-home assistance.' },
+              { question: 'Can support be tailored to individual routines?', answer: 'Absolutely. We take time to understand each person\'s routine, preferences, and what makes them comfortable. Every care plan is built around the individual.' },
+              { question: 'Can families arrange support on behalf of a loved one?', answer: 'Of course. Many of our enquiries come from family members. We are happy to speak with families and involve them in every step.' },
+              { question: 'How do I get started?', answer: 'Simply get in touch by phone or through our care enquiry form. We will have an initial conversation to understand your needs. There is no obligation.' },
+              { question: 'Can support begin with just a few visits?', answer: 'Yes. Many people start with a small number of visits per week and adjust as needs change. We are flexible about increasing or decreasing support over time.' },
+              { question: 'Do you offer respite support for family carers?', answer: 'We do. Our respite service provides dependable cover so family carers can take a break knowing their loved one is well looked after.' },
             ]}
           />
         </div>
       </section>
 
-      {/* CTA BAND */}
       <CTASection
         variant="care"
         title="Ready to arrange care at home?"
         text="Our friendly team is here to help you find the right support. Start a conversation today."
         primaryLabel="Start a Care Enquiry"
         primaryHref="/care/enquiry"
-        secondaryLabel="Or call us on 01234 567 890"
-        secondaryHref="tel:+441234567890"
+        secondaryLabel="Or call us on 07398 761 877"
+        secondaryHref="tel:+447398761877"
       />
     </>
   )

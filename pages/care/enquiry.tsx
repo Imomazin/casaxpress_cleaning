@@ -15,95 +15,67 @@ const CareEnquiry: NextPage = () => {
     <>
       <Head>
         <title>Care Enquiry - CasaXpress Care at Home</title>
-        <meta
-          name="description"
-          content="Start a care enquiry with CasaXpress. Tell us about the support you need and our friendly team will be in touch."
-        />
+        <meta name="description" content="Start a care enquiry with CasaXpress. Tell us about the support you or your loved one needs." />
       </Head>
 
       <section className="care-subhero">
         <div className="container">
           <div className="care-subhero__content">
-            <span className="hero__badge">Care at Home</span>
+            <span className="hero__badge hero__badge--care">Care at Home</span>
             <h1>Start a Care Enquiry</h1>
             <p>
-              Tell us a little about the support you or your loved one needs.
-              There is no obligation, and our friendly team will be in touch
-              to discuss how we can help.
+              Tell us a little about your situation and we will guide you
+              through the next steps. There is no obligation and our friendly
+              team will be in touch promptly.
             </p>
           </div>
           <div className="care-subhero__image">
-            <img
-              src="/images/IMG 2 (1).JPG"
-              alt="Warm, welcoming care support"
-            />
+            <img src="/images/IMG 2 (1).JPG" alt="Warm, welcoming care support" />
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section--white">
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', maxWidth: '1000px', margin: '0 auto' }}>
-            {/* FORM */}
             <div>
-              <h2 style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem' }}>
                 Care enquiry form
               </h2>
-              <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', lineHeight: 1.7 }}>
-                Complete the form below and we will get back to you promptly.
-                All information is treated with complete confidentiality.
+              <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', fontSize: '0.95rem', lineHeight: 1.65 }}>
+                Share a few details and we will get back to you promptly.
+                Everything you tell us is treated with complete confidentiality.
               </p>
 
               <form onSubmit={handleSubmit} className="contact-form" style={{ maxWidth: 'none' }}>
                 <div className="form-group">
                   <label htmlFor="name">Your Name *</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    placeholder="Your full name"
-                  />
+                  <input type="text" id="name" name="name" required placeholder="Your full name" />
                 </div>
-
                 <div className="form-group">
-                  <label htmlFor="email">Email Address *</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    placeholder="your.email@example.com"
-                  />
+                  <label htmlFor="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" required placeholder="Your phone number" />
                 </div>
-
                 <div className="form-group">
-                  <label htmlFor="phone">Phone Number</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="01234 567 890"
-                  />
+                  <label htmlFor="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="your.email@example.com" />
                 </div>
-
                 <div className="form-group">
-                  <label htmlFor="relationship">Your Relationship</label>
-                  <select id="relationship" name="relationship">
+                  <label htmlFor="care-for">Who is the care for? *</label>
+                  <select id="care-for" name="care-for" required>
                     <option value="">Please select</option>
-                    <option value="self">I am enquiring for myself</option>
-                    <option value="parent">For a parent</option>
-                    <option value="partner">For a partner or spouse</option>
-                    <option value="relative">For another relative</option>
-                    <option value="friend">For a friend</option>
-                    <option value="professional">I am a healthcare professional</option>
+                    <option value="self">Myself</option>
+                    <option value="parent">A parent</option>
+                    <option value="partner">A partner or spouse</option>
+                    <option value="relative">Another family member</option>
+                    <option value="friend">A friend</option>
+                    <option value="professional">I am a healthcare professional referring someone</option>
                   </select>
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="support-type">Type of Support Needed</label>
                   <select id="support-type" name="support-type">
-                    <option value="">Please select</option>
+                    <option value="">Please select (or choose &quot;Not sure yet&quot;)</option>
                     <option value="personal-care">Personal Care</option>
                     <option value="companionship">Companionship</option>
                     <option value="daily-living">Daily Living Support</option>
@@ -113,82 +85,62 @@ const CareEnquiry: NextPage = () => {
                     <option value="not-sure">Not sure yet</option>
                   </select>
                 </div>
-
                 <div className="form-group">
-                  <label htmlFor="message">Tell Us About Your Needs</label>
+                  <label htmlFor="message">Tell Us About Your Situation</label>
                   <textarea
                     id="message"
                     name="message"
-                    placeholder="Please share any details about the support you are looking for, including any specific needs, preferences, or questions you have..."
+                    placeholder="Share anything that might help us understand what support is needed. For example: what kind of help is required, how often, and any preferences or concerns."
                   />
                 </div>
-
                 <button type="submit" className="btn btn-care" style={{ width: '100%' }}>
                   Submit Care Enquiry
                 </button>
-
-                {formStatus && (
-                  <div className="form-success">
-                    {formStatus}
-                  </div>
-                )}
+                {formStatus && <div className="form-success">{formStatus}</div>}
               </form>
+
+              <div style={{ textAlign: 'center', marginTop: '2rem', padding: '1.5rem', background: 'var(--care-bg)', borderRadius: 'var(--radius-md)' }}>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', fontWeight: 600, marginBottom: '0.35rem' }}>
+                  Prefer to speak with someone directly?
+                </p>
+                <p style={{ fontSize: '1.35rem', fontWeight: 800 }}>
+                  <a href="tel:+447398761877" style={{ color: 'var(--care-primary)' }}>07398 761 877</a>
+                </p>
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', marginTop: '0.25rem' }}>
+                  Mon - Fri: 8am - 6pm | Sat: 9am - 4pm
+                </p>
+              </div>
             </div>
 
-            {/* SIDEBAR */}
             <div>
-              <div style={{
-                background: 'var(--care-bg)',
-                borderRadius: 'var(--radius-md)',
-                padding: '2rem',
-                marginBottom: '2rem',
-                border: '1px solid var(--border-care)',
-              }}>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--text-primary)' }}>
-                  Prefer to speak with us?
-                </h3>
-                <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '1rem', fontSize: '0.95rem' }}>
-                  Our care team is available to take your call and discuss
-                  your needs in person. There is no obligation.
+              <div className="info-box info-box--care">
+                <h3>Call us directly</h3>
+                <p>
+                  Our care team is available to talk through your needs over the phone.
+                  No pressure, no obligation.
                 </p>
-                <p style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--care-primary)' }}>
-                  <a href="tel:+441234567890" style={{ color: 'var(--care-primary)' }}>
-                    01234 567 890
-                  </a>
+                <p style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--care-primary)', marginTop: '0.75rem' }}>
+                  <a href="tel:+447398761877" style={{ color: 'var(--care-primary)' }}>07398 761 877</a>
                 </p>
-                <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', marginTop: '0.35rem' }}>
                   Mon - Fri: 8am - 6pm | Sat: 9am - 4pm
                 </p>
               </div>
 
-              <div style={{
-                background: 'var(--ivory)',
-                borderRadius: 'var(--radius-md)',
-                padding: '2rem',
-                marginBottom: '2rem',
-              }}>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--text-primary)' }}>
-                  What happens next?
-                </h3>
+              <div className="info-box info-box--neutral">
+                <h3>What happens next?</h3>
                 <ul className="feature-list">
                   <li>We review your enquiry promptly</li>
                   <li>A member of our care team will call you</li>
                   <li>We discuss your needs in detail</li>
-                  <li>We suggest a support plan tailored to you</li>
+                  <li>We suggest a tailored support plan</li>
                   <li>If everything feels right, care begins</li>
                 </ul>
               </div>
 
-              <div style={{
-                background: '#fff',
-                borderRadius: 'var(--radius-md)',
-                padding: '2rem',
-                border: '1px solid var(--border-light)',
-              }}>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--text-primary)' }}>
-                  Your information is safe
-                </h3>
-                <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7, fontSize: '0.95rem' }}>
+              <div className="info-box info-box--neutral">
+                <h3>Your information is safe</h3>
+                <p>
                   All enquiry information is treated with complete
                   confidentiality. We will never share your details with
                   third parties without your consent.
