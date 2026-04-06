@@ -34,10 +34,6 @@ export default function Footer() {
             <h4 className="footer-subheading">Home Cleaning</h4>
             <ul className="footer-links">
               <li><Link href="/cleaning">Cleaning Overview</Link></li>
-              <li><Link href="/cleaning#regular">Regular Cleaning</Link></li>
-              <li><Link href="/cleaning#deep">Deep Cleaning</Link></li>
-              <li><Link href="/cleaning#move">Move In / Out Cleaning</Link></li>
-              <li><Link href="/cleaning#tenancy">End of Tenancy</Link></li>
               <li><Link href="/contact">Book a Visit</Link></li>
             </ul>
           </div>
@@ -68,8 +64,8 @@ export default function Footer() {
         <div className="footer-bottom">
           <p>&copy; {currentYear} CasaXpress. All rights reserved.</p>
           <div className="footer-bottom__links">
-            <Link href="/">Privacy Policy</Link>
-            <Link href="/">Terms of Service</Link>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
           </div>
         </div>
       </div>

@@ -19,13 +19,15 @@ export default function CTASection({
   secondaryLabel,
   secondaryHref,
 }: CTASectionProps) {
+  const btnClass = variant === 'care' ? 'btn-care-white' : 'btn-clean-white'
+
   return (
     <section className={`cta-band cta-band--${variant}`}>
       <div className="container">
         <h2 className="cta-band__title">{title}</h2>
         <p className="cta-band__text">{text}</p>
         <div className="cta-band__buttons">
-          <Link href={primaryHref} className="btn btn-white">
+          <Link href={primaryHref} className={`btn ${btnClass}`}>
             {primaryLabel}
           </Link>
         </div>

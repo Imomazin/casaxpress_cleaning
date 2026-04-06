@@ -16,25 +16,22 @@ const Contact: NextPage = () => {
     <>
       <Head>
         <title>Contact Us - CasaXpress</title>
-        <meta
-          name="description"
-          content="Get in touch with CasaXpress for care at home enquiries or to book a home cleaning service."
-        />
+        <meta name="description" content="Get in touch with CasaXpress for care at home enquiries or to book a home cleaning service." />
       </Head>
 
-      <section className="content-section">
+      <section className="section section--white">
         <div className="container">
-          <h2>Get in Touch</h2>
+          <div className="section__header">
+            <h2 className="section__title">Get in Touch</h2>
+            <p className="section__subtitle">
+              We are here to help with both care at home and home cleaning enquiries.
+            </p>
+          </div>
 
-          <p style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 1.5rem' }}>
-            We are here to help with both care at home and home cleaning enquiries.
-            Get in touch and our team will be happy to assist.
-          </p>
-
-          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>
+          <div style={{ textAlign: 'center', marginBottom: '3rem', marginTop: '-1.5rem' }}>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.925rem' }}>
               Looking specifically for care support?{' '}
-              <Link href="/care/enquiry" style={{ fontWeight: 600 }}>
+              <Link href="/care/enquiry" style={{ fontWeight: 600, color: 'var(--care-primary)' }}>
                 Use our dedicated care enquiry form
               </Link>
             </p>
@@ -42,45 +39,32 @@ const Contact: NextPage = () => {
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', maxWidth: '1000px', margin: '0 auto' }}>
             <div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>
-                Contact Details
-              </h3>
+              <h3 style={{ fontSize: '1.375rem', marginBottom: '1.5rem', fontWeight: 700 }}>Contact Details</h3>
 
               <div style={{ marginBottom: '2rem' }}>
-                <h4 style={{ fontSize: '1.125rem', marginBottom: '0.5rem', fontWeight: 600 }}>
-                  Email
-                </h4>
+                <h4 style={{ fontSize: '1rem', marginBottom: '0.35rem', fontWeight: 600 }}>Email</h4>
                 <p style={{ color: 'var(--text-secondary)' }}>
-                  <a href="mailto:hello@casaxpress.co.uk">
-                    hello@casaxpress.co.uk
-                  </a>
+                  <a href="mailto:hello@casaxpress.co.uk" style={{ color: 'var(--care-primary)' }}>hello@casaxpress.co.uk</a>
                 </p>
               </div>
 
               <div style={{ marginBottom: '2rem' }}>
-                <h4 style={{ fontSize: '1.125rem', marginBottom: '0.5rem', fontWeight: 600 }}>
-                  Phone
-                </h4>
+                <h4 style={{ fontSize: '1rem', marginBottom: '0.35rem', fontWeight: 600 }}>Phone</h4>
                 <p style={{ color: 'var(--text-secondary)' }}>
-                  <a href="tel:+441234567890">01234 567 890</a>
+                  <a href="tel:+441234567890" style={{ color: 'var(--care-primary)' }}>01234 567 890</a>
                 </p>
               </div>
 
               <div style={{ marginBottom: '2rem' }}>
-                <h4 style={{ fontSize: '1.125rem', marginBottom: '0.5rem', fontWeight: 600 }}>
-                  Service Areas
-                </h4>
-                <p style={{ color: 'var(--text-secondary)' }}>
-                  We provide care and cleaning services throughout the UK.
-                  Contact us to confirm availability in your area.
+                <h4 style={{ fontSize: '1rem', marginBottom: '0.35rem', fontWeight: 600 }}>Service Areas</h4>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.65 }}>
+                  We provide care and cleaning services throughout the UK. Contact us to confirm availability.
                 </p>
               </div>
 
               <div>
-                <h4 style={{ fontSize: '1.125rem', marginBottom: '0.5rem', fontWeight: 600 }}>
-                  Opening Hours
-                </h4>
-                <p style={{ color: 'var(--text-secondary)' }}>
+                <h4 style={{ fontSize: '1rem', marginBottom: '0.35rem', fontWeight: 600 }}>Opening Hours</h4>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.65 }}>
                   Monday - Friday: 8:00 AM - 6:00 PM<br />
                   Saturday: 9:00 AM - 4:00 PM<br />
                   Sunday: Closed
@@ -89,43 +73,21 @@ const Contact: NextPage = () => {
             </div>
 
             <div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>
-                Send Us a Message
-              </h3>
+              <h3 style={{ fontSize: '1.375rem', marginBottom: '1.5rem', fontWeight: 700 }}>Send Us a Message</h3>
 
               <form onSubmit={handleSubmit} className="contact-form" style={{ maxWidth: 'none' }}>
                 <div className="form-group">
                   <label htmlFor="name">Name *</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    placeholder="Your name"
-                  />
+                  <input type="text" id="name" name="name" required placeholder="Your name" />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="email">Email *</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    placeholder="your.email@example.com"
-                  />
+                  <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="phone">Phone</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="01234 567 890"
-                  />
+                  <input type="tel" id="phone" name="phone" placeholder="01234 567 890" />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="service">Service Interest</label>
                   <select id="service" name="service">
@@ -136,26 +98,14 @@ const Contact: NextPage = () => {
                     <option value="other">Other</option>
                   </select>
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="message">Message *</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    placeholder="Tell us about your requirements..."
-                  />
+                  <textarea id="message" name="message" required placeholder="Tell us about your requirements..." />
                 </div>
-
-                <button type="submit" className="btn btn-care" style={{ width: '100%' }}>
+                <button type="submit" className="btn btn-neutral" style={{ width: '100%' }}>
                   Send Message
                 </button>
-
-                {formStatus && (
-                  <div className="form-success">
-                    {formStatus}
-                  </div>
-                )}
+                {formStatus && <div className="form-success">{formStatus}</div>}
               </form>
             </div>
           </div>
