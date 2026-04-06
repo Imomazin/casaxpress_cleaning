@@ -1,18 +1,18 @@
 /* ============================================
    CasaXpress Design System
-   Neutral Homepage | Green Care | Navy Cleaning
+   Neutral Homepage | Red Care | Navy Cleaning
    ============================================ */
 
 :root {
-  /* Care palette - Deep Green */
-  --care-primary: #1B4D3E;
-  --care-deep: #143D31;
-  --care-mid: #2D6B4F;
-  --care-light: #3A8563;
-  --care-bg: #F0F7F4;
-  --care-bg-alt: #E2EFE8;
-  --care-border: rgba(27, 77, 62, 0.15);
-  --care-shadow: 0 8px 24px rgba(27, 77, 62, 0.15);
+  /* Care palette - Sharp Red */
+  --care-primary: #C41E2F;
+  --care-deep: #A01828;
+  --care-mid: #D93A4A;
+  --care-light: #E85A68;
+  --care-bg: #FDF2F3;
+  --care-bg-alt: #F9E4E6;
+  --care-border: rgba(196, 30, 47, 0.15);
+  --care-shadow: 0 8px 24px rgba(196, 30, 47, 0.15);
 
   /* Cleaning palette - Navy Blue */
   --clean-primary: #1B2A4A;
@@ -436,7 +436,7 @@ ul, ol {
 .gateway__grid {
   flex: 1;
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   padding: 1.5rem 24px 3rem;
   max-width: 1400px;
@@ -483,7 +483,7 @@ ul, ol {
 
 .gateway__card-image {
   width: 100%;
-  height: 55%;
+  height: 320px;
   object-fit: cover;
   display: block;
 }
